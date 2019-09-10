@@ -17,7 +17,7 @@
     "supertest": "^4.0.2"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest src/tests/*.test.js" // add 'NODE_ENV=test' to beginning if in express test environment 
   },
   "repository": {
     "type": "git",
