@@ -19,7 +19,8 @@
   "scripts": {
     "test": "NODE_ENV=test jest src/tests/*.test.js",
     "start": "node src/index.js",
-    "dev": "nodemon src/index.js"
+    "dev": "nodemon src/index.js",
+    "lint": "eslint *.*"
   },
   "repository": {
     "type": "git",
