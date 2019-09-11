@@ -23,7 +23,9 @@
     "test": "NODE_ENV=test tape src/tests/*.test.js | tap-spec",
     "start": "node src/index.js",
     "dev": "nodemon src/index.js",
-    "lint": "eslint *.*"
+    "lint": "eslint *.*",
+    "db:build": "NODE_ENV=production node src/model/database/db_build.js",
+    "db:build-local": "NODE_ENV=local node src/model/database/db_build.js"
   },
   "repository": {
     "type": "git",
