@@ -2,16 +2,20 @@ require("env2")("./.env");
 const pgp = require("pg-promise")();
 const url = require("url");
 
-const { PLANTBASE_DB_URL } = process.env;
+let DB_URL = "";
 
 if (process.env.NODE_ENV === "test") {
-  PLANTBASE_DB_URL = process.env.TEST_DB_URL;
+  DB_URL = process.env.TEST_DB_URL;
+} else if (process.env.NODE_ENV === "local") {
+  DB_URL = process.env.LOCAL_DB_URL;
+} else if (process.env.NODE_ENV === "production") {
+  DB_URL = process.env.PLANTBASE_DB_URL;
 }
 
-if (!PLANTBASE_DB_URL) {
-  throw new Error("Environment variable PLANTBASE_DB_URL must be set");
+if (!DB_URL) {
+  throw new Error("Environment variable DB_URL must be set");
 }
-const params = url.parse(PLANTBASE_DB_URL);
+const params = url.parse(DB_URL);
 
 const [username, password] = params.auth.split(":");
 
