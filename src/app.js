@@ -26,12 +26,9 @@ app.engine(
 app.set("port", process.env.PORT || 3000);
 app.use(controllers);
 
-// hypothetical test
-const dbTest = (a, b) => {
-  return a + b;
-};
+// // hypothetical test
+// const dbTest = (a, b) => {
+//   return a + b;
+// };
 
-module.exports = {
-  dbTest,
-  app
-};
+module.exports = app;
