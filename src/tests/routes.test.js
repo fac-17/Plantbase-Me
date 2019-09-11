@@ -8,6 +8,7 @@ test("Home route should return HTML content", t => {
     .get("/")
     .expect("Content-Type", /html/)
     .end((err, res) => {
+      t.equal(1, 1);
       t.end();
     });
 });

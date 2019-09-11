@@ -31,6 +31,4 @@ app.use(controllers);
 //   return a + b;
 // };
 
-module.exports = {
-  app
-};
+module.exports = app;
