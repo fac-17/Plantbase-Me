@@ -1,5 +1,8 @@
 const request = require("supertest");
-const test = require("tape");
+const tape = require("tape");
+const _test = require("tape-promise").default;
+
+const test = _test(tape);
 const app = require("../app");
 
 test("Home route should return HTML content", t => {
@@ -22,7 +25,19 @@ test("Home route should return with statuscode 200", t => {
     .get("/")
     .expect(200)
     .end((err, res) => {
+      t.plan(2);
       t.equal(res.status, 200, "Status code is 200");
+      t.error(err, "There is no error");
+      t.end();
+    });
+});
+
+test("Error loads up correctly for 404", t => {
+  request(app)
+    .get("/foobar")
+    .expect(404)
+    .end((err, res) => {
+      t.equal(res.status, 404, "Status code is 404");
       t.error(err, "There is no error");
       t.end();
     });
