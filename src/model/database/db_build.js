@@ -3,7 +3,7 @@ const path = require("path");
 const connection = require("./db_connection");
 
 const sql = file => {
-  new QueryFile(path.join(__dirname, file), {
+  return new QueryFile(path.join(__dirname, file), {
     minify: true
   });
 };
