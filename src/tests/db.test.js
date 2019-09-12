@@ -9,11 +9,4 @@ test("tape test for db files is working", t => {
   t.end();
 });
 
-test("Check database builds", t => {
-  buildDb((err, res) => {
-    t.error(err, "there is no error");
-    t.end();
-  });
-});
-
 // ideally would be good to be able to check whether a database actually has built itself
