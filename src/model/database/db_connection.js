@@ -1,4 +1,6 @@
-require("env2")("./.env");
+// const env = require("env2")("./.env");
+require("dotenv").config();
+
 const pgp = require("pg-promise")();
 const url = require("url");
 
