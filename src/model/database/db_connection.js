@@ -4,7 +4,7 @@ require("dotenv").config();
 const pgp = require("pg-promise")();
 const url = require("url");
 
-let DB_URL = "";
+let DB_URL = process.env;
 
 if (process.env.NODE_ENV === "test") {
   DB_URL = process.env.TEST_DB_URL;
@@ -14,8 +14,8 @@ if (process.env.NODE_ENV === "test") {
   DB_URL = process.env.PLANTBASE_DB_URL;
 }
 
-if (!DB_URL) {
-  throw new Error("Environment variable DB_URL must be set");
+if (!process.env.PLANTBASE_DB_URL) {
+  throw new Error("Environment variable must have PLANTBASE_DB_URL database");
 }
 const params = url.parse(DB_URL);
 
