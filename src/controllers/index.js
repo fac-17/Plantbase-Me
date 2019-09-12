@@ -1,11 +1,12 @@
 const express = require("express");
-
+const queries = require("../model/queries");
 const router = express.Router();
 
-const cravingIcons = ["hamburger", "cheese", "jelly"];
-
 router.get("/", (req, res) => {
-  res.render("home", { cravingIcons });
+  queries
+    .getCravingNames()
+    .then(cravingIcons => res.render("home", { cravingIcons }))
+    .catch(err => next(err));
 });
 
 module.exports = router;
