@@ -1,3 +1,16 @@
-<div>
-    Hello Plantbased World
-</div>
+<section>
+    <section>
+        What are you looking for?
+    </section>
+
+    <section class="craving-icon-slider">
+        {{#each cravingIcons}}
+        <div class="craving-svg">
+            <image src="/assets/{{this}}.svg" />
+        </div>
+        {{/each}}
+    </section>
+
+    <button class="select-button">Select</button>
+
+</section>
