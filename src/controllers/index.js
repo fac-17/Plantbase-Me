@@ -8,4 +8,8 @@ router.get("/", (req, res) => {
   res.render("home", { cravingIcons });
 });
 
+router.get("/results", (req, res) => {
+  res.render("results", { productResult });
+});
+
 module.exports = router;
