@@ -1,3 +1,3 @@
 const connection = require("../database/db_connection");
 
-module.exports = () => connection.query("SELECT * FROM cravings");
+module.exports = () => connection.query("SELECT * FROM cravings;");
