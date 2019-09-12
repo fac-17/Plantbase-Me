@@ -1,6 +1,7 @@
 const express = require("express");
 
 const router = express.Router();
+const error = require("./error");
 
 const cravingIcons = ["hamburger", "cheese", "jelly"];
 const allProducts = [
@@ -33,5 +34,7 @@ router.get("/results", (req, res) => {
 router.get("/product-page", (req, res) => {
   res.render("productPage", { chosenProduct });
 });
+
+router.use(error.client);
 
 module.exports = router;
