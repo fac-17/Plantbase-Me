@@ -80,12 +80,11 @@ INSERT INTO products (product_name, product_description, where_to_buy, product_i
 INSERT INTO ratings (product_id, rating, comment, votes) VALUES
 (1, 4, 'Great!, Tastes just like original cheddar', 6),
 (1, 5, 'Why would someone even eat real cheese when this exists???', 1),
-(1, 1, `Didn't melt on pizza`, 2),
+(1, 1, 'Did not melt on pizza', 2),
 (1, 3, 'Did the job', 5),
 (2, 5, 'I love it. So friggin great', 9),
 (3, 2, 'A bit of a let down', 2),
 (4, 1, 'Do they even know what cheese is like? this is just wierd mush', 6),
 (5, 4, 'More than okay', 5);
-
 
 COMMIT;
