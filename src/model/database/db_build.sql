@@ -27,54 +27,53 @@ CREATE TABLE ratings (
 );
 
 INSERT INTO cravings (craving_name) VALUES
-("Cheese"),
-("Meat"),
-("Milk"),
-("Sweets");
+('Cheese'),
+('Meat'),
+('Milk'),
+('Sweets');
 
 INSERT INTO products (product_name, product_description, where_to_buy, product_image, craving_id, product_price) VALUES
 (
-    "Violife Original Grated",
-    "With coconut oil and vitamin B12. Melts great! Free from dairy, soya, gluten, lactose and nuts. No preservatives. Suitable for vegans & vegetarians. Kosher",
-    "{"Waitrose", "Asda", "Morrisons"}",
-    "https://imgur.com/ZCAQAGA",
+    'Violife Original Grated',
+    'With coconut oil and vitamin B12. Melts great! Free from dairy, soya, gluten, lactose and nuts. No preservatives. Suitable for vegans & vegetarians. Kosher',
+    '{"Waitrose", "Asda", "Morrisons"}',
+    'https://imgur.com/ZCAQAGA',
     1,
     2.49
-);
+),
 (
-    "Engvita Yeast Flakes B12",
-    "Engevita Yeast Flakes with B12 are a gluten-free, vegan food with a cheesy, nutty taste. Made from primary inactive yeast, without artificial additives or preservatives, these yeast flakes are the ideal condiment to sprinkle on soups, stews, casseroles, toppings, salads and breakfast cereals to enhance the flavour.
-This pleasant tasting yeast is so yummy and also readily dissolved in water, milk, fruit or vegetable juices.
+    'Engvita Yeast Flakes B12',
+    'A gluten-free, vegan food with a cheesy, nutty taste. These yeast flakes are the ideal condiment to sprinkle on soups, stews, casseroles, toppings, salads and breakfast cereals to enhance the flavour.
 These yeast flakes have been fortified with Vitamin B12, which is considered to be an essential supplement to the vegan diet.
-",
-"{"Holland&Barrett", "Ocado", "Tesco"}",
-"https://i.imgur.com/ct10sIE.jpg",
+',
+'{"Holland&Barrett", "Ocado", "Tesco"}',
+'https://i.imgur.com/ct10sIE.jpg',
 1,
 3.10
-);
+),
 (
-    "Sainsbury's Free From Cheddar-Style With Onion",
-    "Coconut oil based alternative to Cheddar cheese with caramelised red onion chutney",
-    "{Sainsburies}",
-    "https://i.imgur.com/d5THZ8k.jpg",
+    'Sainsburys Free From Cheddar-Style With Onion',
+    'Coconut oil based alternative to Cheddar cheese with caramelised red onion chutney',
+    '{"Sainsburys"}',
+    'https://i.imgur.com/d5THZ8k.jpg',
     1,
     2.25
-);
+),
 (
-    "Waitrose Vegan Original Grated",
-    "Grated coconut derivative based alternative. Melts well",
-    "{Waitrose}",
-    "https://i.imgur.com/OLlOkLR.jpg",
+    'Waitrose Vegan Original Grated',
+    'Grated coconut derivative based alternative. Melts well',
+    '{"Waitrose"}',
+    'https://i.imgur.com/OLlOkLR.jpg',
     1,
-    2,60
-);
+    2.60
+),
 (
-    "Daiya Medium Cheddar Style Block"
-    "Medium Cheddar Style Farmhouse Block. Artfully artisanal crafted. Good source of calcium"
-    "{Sainsburies}",
-    "https://i.imgur.com/jNS9T49.jpg",
+    'Daiya Medium Cheddar Style Block',
+    'Medium Cheddar Style Farmhouse Block. Artfully artisanal crafted. Good source of calcium',
+    '{"Sainsburys"}',
+    'https://i.imgur.com/jNS9T49.jpg',
     1,
-    4,50
+    4.50
 );
 
 
