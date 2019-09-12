@@ -1,9 +1,9 @@
 const express = require("express");
-
+const queries = require("../model/queries");
 const router = express.Router();
 const error = require("./error");
 
-const cravingIcons = ["hamburger", "cheese", "jelly"];
+// const cravingIcons = ["hamburger", "cheese", "jelly"];
 const allProducts = [
   {
     product_name: "Violife Original Grated",
@@ -24,8 +24,15 @@ const chosenProduct = {
 };
 
 router.get("/", (req, res) => {
-  res.render("home", { cravingIcons });
+  queries
+    .getCravings()
+    .then(cravings => res.render("home", { cravings }))
+    .catch(err => next(err));
 });
+
+queries
+  .getProductsbyCraving(1)
+  .then(productList => console.log("this is the product list:", productList));
 
 router.get("/results", (req, res) => {
   res.render("results", { allProducts });
