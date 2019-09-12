@@ -2,7 +2,7 @@ const express = require("express");
 
 const router = express.Router();
 
-const cravingIcons = ["burger", "cheese", "jelly"];
+const cravingIcons = ["hamburger", "cheese", "jelly"];
 
 router.get("/", (req, res) => {
   res.render("home", { cravingIcons });
