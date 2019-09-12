@@ -21,8 +21,9 @@ CREATE TABLE ratings (
     id                  SERIAL          PRIMARY KEY,
     product_id          INTEGER         NOT NULL,
     rating              INTEGER         NOT NULL,
-    comments            VARCHAR(500),
-    tags                VARCHAR(200)
+    comment             VARCHAR(500),
+    tags                VARCHAR(200),
+    votes               INTEGER
 );
 
 INSERT INTO cravings (craving_name) VALUES
@@ -76,8 +77,8 @@ These yeast flakes have been fortified with Vitamin B12, which is considered to 
 );
 
 
-INSERT INTO ratings (product_id, rating, comments) VALUES
-(1, 4, 'Great!, Tastes just like original cheddar');
+INSERT INTO ratings (product_id, rating, comment, votes) VALUES
+(1, 4, 'Great!, Tastes just like original cheddar', 5);
 
 
 COMMIT;
