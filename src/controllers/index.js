@@ -1,6 +1,7 @@
 const express = require("express");
 const queries = require("../model/queries");
 const router = express.Router();
+const error = require("./error");
 
 // const allProducts = [
 //   {
@@ -49,5 +50,8 @@ router.get("/results", (req, res) => {
 // router.get("/product-page", (req, res) => {
 //   res.render("productPage", { chosenProduct });
 // });
+
+router.use(error.client);
+router.use(error.server);
 
 module.exports = router;
