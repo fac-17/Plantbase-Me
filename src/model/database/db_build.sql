@@ -36,7 +36,7 @@ INSERT INTO products (product_name, product_description, where_to_buy, product_i
     'Violife Original Grated',
     'With coconut oil and vitamin B12. Melts great! Free from dairy, soya, gluten, lactose and nuts. No preservatives. Suitable for vegans & vegetarians. Kosher',
     '{"Waitrose", "Asda", "Morrisons"}',
-    'https://imgur.com/ZCAQAGA',
+    'https://imgur.com/ZCAQAGA.jpg',
     1,
     2.49
 );
