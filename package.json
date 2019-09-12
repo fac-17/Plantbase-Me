@@ -11,7 +11,8 @@
     "pg-promise": "^9.1.4",
     "tap-spec": "^5.0.0",
     "tape": "^4.11.0",
-    "tape-promise": "^4.0.0"
+    "tape-promise": "^4.0.0",
+    "url": "^0.11.0"
   },
   "devDependencies": {
     "eslint": "^6.3.0",
