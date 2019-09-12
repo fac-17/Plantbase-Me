@@ -75,13 +75,6 @@ These yeast flakes have been fortified with Vitamin B12, which is considered to 
     1,
     4.50
 ), (
-    'product name',
-    'product_description',
-    '{"Vegans United"}',
-    'product_image',
-    3,
-    1.25
-), (
     'Elmhurst Milked Almonds™ Almond Milk',
     'Imagine almond milk that actually tastes like almonds. Well, we made it! Our trick?',
     '{"Vegans United"}',
@@ -115,6 +108,41 @@ These yeast flakes have been fortified with Vitamin B12, which is considered to 
     '{"Vegans United"}',
     'https://img.veganlogin.com/3JCFDd3Zad2Y60W8.jpg',
     3,
+    1.25
+), (
+    'Beyond Burger',
+    'The worlds first plant-based burger that looks, cooks, and satisfies like beef without GMOs, soy, or gluten.',
+    '{"Vegans United"}',
+    'https://img.veganlogin.com/t2vynOcMox8SYoYV.png',
+    2,
+    1.25
+), (
+    'Bonsan Organic Smoky Barbecue Shredded Jackfruit',
+    'Plant-based goodness that tastes like the real deal? Look no further than our tasty Smoky Shredded Jackfruit. This Asian fruit is incredibly versatile and with a meaty texture, it makes for a convincing meat substitute. Get creative and veganize all your favourite dishes, from tacos to fajitas, burgers and wraps!',
+    '{"Vegans United"}',
+    'https://img.veganlogin.com/zDhxPQ83JdsmCJvN.png',
+    2,
+    1.25
+), (
+    'Uptons Naturals Bar B Que Jackfruit',
+    'This tangy Bar-B-Que Jackfruit makes a great sandwich topped with coleslaw, and also goes great on a salad, in a wrap, or over rice.',
+    '{"Vegans United"}',
+    'https://img.veganlogin.com/BZMO0PLjvTsDFloN.png',
+    2,
+    1.25
+), (
+    'Tofurky Feast',
+    'Tailgate partiers, trick-or-treaters and the Tooth Fairy are all in agreement: if you do something twice in a row, it’s officially a tradition. We’ve been serving up Tofurky Roasts since 1995, so we’re well-versed in the fine art of the meat-free main dish. If this is your first Tofurky Roast dinner, congratulations - you’re halfway to a brand new tradition.',
+    '{"Vegans United"}',
+    'https://img.veganlogin.com/tNtWeFKdqwecomSC.png',
+    2,
+    1.25
+), (
+    'Beyond Sausage Hot Italian',
+    'THE WORLD’S FIRST PLANT-BASED SAUSAGE THAT LOOKS, SIZZLES AND SATISFIES LIKE PORK.',
+    '{"Vegans United"}',
+    'https://img.veganlogin.com/KwrqzKeLBthFa9wq.jpg',
+    2,
     1.25
 );
 
