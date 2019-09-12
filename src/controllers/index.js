@@ -4,7 +4,7 @@ const router = express.Router();
 
 router.get("/", (req, res) => {
   queries
-    .getCravingNames()
+    .getCravings()
     .then(cravingIcons => res.render("home", { cravingIcons }))
     .catch(err => next(err));
 });
