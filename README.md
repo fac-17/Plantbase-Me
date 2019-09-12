@@ -228,3 +228,42 @@ The idea is to encourage more people to cut out some animal products, with a foc
 - Testing
   - Tests on all routes
   - Tests on queries
+
+## What we learnt
+
+### Topic: Server set up
+
+1. in app.js whats the difference between:
+
+```javascript
+app.use(bodyParser.urlencoded());
+app.use(bodyParser.json
+```
+
+2. Why do we require express and call it as a function?
+
+```javascript
+const app = express();
+```
+
+3.
+
+### Topic: Why does tape group our tests?
+
+1. When we run a second set of tape tests our second set are grouped under the first heading. Why?
+
+![](https://i.imgur.com/m0iJ1d1.png)
+
+Seems to do with asynchronicity where the second set are running before the t.end of the first set.
+
+See these similar issues:
+[381](https://github.com/substack/tape/issues/381)
+[358](https://github.com/substack/tape/issues/358)
+
+You can use:
+
+[tape-promise](https://www.npmjs.com/package/tape-promise)
+
+## Create a test DB
+
+![](https://i.imgur.com/yWWagb2.png)
