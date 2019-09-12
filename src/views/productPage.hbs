@@ -1,10 +1,14 @@
 <section>
-    <img src={{this.product_image}} />
-    <p>{{this.where_to_buy}}</p>
-    <h3>{{this.product_name}}</h3>
-    <p>{{this.product_price}}</p>
+    <img src={{chosenProduct.product_image}} />
+    <p>
+        {{#each chosenProduct.where_to_buy}}
+        {{this}},
+        {{/each}}
+    </p>
+    <h3>{{chosenProduct.product_name}}</h3>
+    <p>Price: {{chosenProduct.product_price}}</p>
 
-    <p>{{this.product_description}}</p>
+    <p>{{chosenProduct.product_description}}</p>
     <article>!!Rating goes here!!</article>
     <section>!!Comments go here!!</section>
 </section>
