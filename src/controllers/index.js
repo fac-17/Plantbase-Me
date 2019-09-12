@@ -5,8 +5,12 @@ const router = express.Router();
 router.get("/", (req, res) => {
   queries
     .getCravings()
-    .then(cravingIcons => res.render("home", { cravingIcons }))
+    .then(cravings => res.render("home", { cravings }))
     .catch(err => next(err));
 });
+
+queries
+  .getProductsbyCraving(1)
+  .then(productList => console.log("this is the product list:", productList));
 
 module.exports = router;
