@@ -16,5 +16,6 @@ connection
   .catch(e => console.error("error", e));
 
 module.exports = {
-  build
+  build,
+  connection
 };
