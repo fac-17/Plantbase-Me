@@ -1,0 +1,17 @@
+<section>
+    <h2 id="results-title">Choose a Product:</h2>
+
+    <section class="results-list">
+        {{#each allProducts}}
+        <article class="result">
+            <h3>{{this.product_name}}</h3>
+            <img src="{{this.product_image}}" />
+            <p>{{this.product_description}}</p>
+
+
+        </article>
+
+        {{/each}}
+
+    </section>
+</section>
