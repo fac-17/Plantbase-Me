@@ -1,3 +1,21 @@
+:root {
+  --darkblue: #184353;
+  --lightblue: #80a4b2;
+  --orangered: #ed554b;
+  --white: #ffffff;
+  --grey: #e0e0e0;
+  --yellow: #edd596;
+  --purple: #1e1732;
+}
+
 .nav-bar {
   display: flex;
+  background: var(--lightblue);
+  font-family: "Dosis", sans-serif;
+  font-weight: 700;
+  justify-content: space-evenly;
+}
+
+.me-text {
+  font-size: 17px;
 }
