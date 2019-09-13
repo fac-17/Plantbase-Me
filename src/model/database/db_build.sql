@@ -37,7 +37,7 @@ INSERT INTO products (product_name, product_description, where_to_buy, product_i
     'Violife Original Grated',
     'With coconut oil and vitamin B12. Melts great! Free from dairy, soya, gluten, lactose and nuts. No preservatives. Suitable for vegans & vegetarians. Kosher',
     '{"Waitrose", "Asda", "Morrisons"}',
-    'https://imgur.com/ZCAQAGA',
+    'https://imgur.com/ZCAQAGA.jpg',
     1,
     2.49
 ),
@@ -74,6 +74,76 @@ INSERT INTO products (product_name, product_description, where_to_buy, product_i
     'https://i.imgur.com/jNS9T49.jpg',
     1,
     4.50
+), (
+    'Elmhurst Milked Almonds™ Almond Milk',
+    'Imagine almond milk that actually tastes like almonds. Well, we made it! Our trick?',
+    '{"Vegans United"}',
+    'https://img.veganlogin.com/PezRzerGDBQ8R4NH.jpg',
+    3,
+    1.25
+), (
+    'Oatly Original Oat Milk',
+    'Oatlys oat drink contains as much calcium as milk and is also enriched with vitamins. It has all the beneficial properties of oats and contains a balance of protein, carbohydrates and unsaturated fats. Its also dairy free and soya free too.',
+    '{"Vegans United"}',
+    'https://img.veganlogin.com/THzOMNbQBFaRs8Tl.jpg',
+    3,
+    1.25
+), (
+    'Silk Almond Milk, Original',
+    'How will you enjoy the smooth taste of Silk® Original Almondmilk? Probably with a great big smile on your face! At a sensible 60 calories a cup, it’s delicious over cereal, in coffee, as part of a favorite recipe or served straight up in a glass.',
+    '{"Vegans United"}',
+    'https://img.veganlogin.com/8zyOzMzJ8Ze4GTzj.jpg',
+    3,
+    1.25
+), (
+    'Elmhurst Milked Hazelnuts™ Hazelnut Milk',
+    'Enjoy creamy, mindful indulgence in your iced coffee, smoothie, cereal, or glass.',
+    '{"Vegans United"}',
+    'https://img.veganlogin.com/VAfe9credLs4k4pO.jpg',
+    3,
+    1.25
+), (
+    'Silk Soymilk, Organic Unsweetened',
+    'Try Silk Organic Unsweetened Soymilk anywhere you enjoy dairy milk over your cereal, in your coffee or simply by itself. It’s all the soy goodness you love with absolutely no added sugar. Plus, Silk soymilk is a good source of wholesome, nutritionally complete soy protein and has as much calcium as dairy milk.',
+    '{"Vegans United"}',
+    'https://img.veganlogin.com/3JCFDd3Zad2Y60W8.jpg',
+    3,
+    1.25
+), (
+    'Beyond Burger',
+    'The worlds first plant-based burger that looks, cooks, and satisfies like beef without GMOs, soy, or gluten.',
+    '{"Vegans United"}',
+    'https://img.veganlogin.com/t2vynOcMox8SYoYV.png',
+    2,
+    1.25
+), (
+    'Bonsan Organic Smoky Barbecue Shredded Jackfruit',
+    'Plant-based goodness that tastes like the real deal? Look no further than our tasty Smoky Shredded Jackfruit. This Asian fruit is incredibly versatile and with a meaty texture, it makes for a convincing meat substitute. Get creative and veganize all your favourite dishes, from tacos to fajitas, burgers and wraps!',
+    '{"Vegans United"}',
+    'https://img.veganlogin.com/zDhxPQ83JdsmCJvN.png',
+    2,
+    1.25
+), (
+    'Uptons Naturals Bar B Que Jackfruit',
+    'This tangy Bar-B-Que Jackfruit makes a great sandwich topped with coleslaw, and also goes great on a salad, in a wrap, or over rice.',
+    '{"Vegans United"}',
+    'https://img.veganlogin.com/BZMO0PLjvTsDFloN.png',
+    2,
+    1.25
+), (
+    'Tofurky Feast',
+    'Tailgate partiers, trick-or-treaters and the Tooth Fairy are all in agreement: if you do something twice in a row, it’s officially a tradition. We’ve been serving up Tofurky Roasts since 1995, so we’re well-versed in the fine art of the meat-free main dish. If this is your first Tofurky Roast dinner, congratulations - you’re halfway to a brand new tradition.',
+    '{"Vegans United"}',
+    'https://img.veganlogin.com/tNtWeFKdqwecomSC.png',
+    2,
+    1.25
+), (
+    'Beyond Sausage Hot Italian',
+    'THE WORLD’S FIRST PLANT-BASED SAUSAGE THAT LOOKS, SIZZLES AND SATISFIES LIKE PORK.',
+    '{"Vegans United"}',
+    'https://img.veganlogin.com/KwrqzKeLBthFa9wq.jpg',
+    2,
+    1.25
 );
 
 
