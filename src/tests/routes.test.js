@@ -5,7 +5,7 @@ const _test = require("tape-promise").default;
 const test = _test(tape);
 const app = require("../app");
 
-test("Home route should return HTML content", t => {
+test("Home route should return HTML content and 200 status", t => {
   request(app)
     .get("/")
     .end((err, res) => {
@@ -14,16 +14,6 @@ test("Home route should return HTML content", t => {
         "text/html; charset=utf-8",
         "Content type is html"
       );
-      t.error(err, "There is no error");
-      t.end();
-    });
-});
-
-test("Home route should return with statuscode 200", t => {
-  request(app)
-    .get("/")
-    .end((err, res) => {
-      t.plan(2);
       t.equal(res.status, 200, "Status code is 200");
       t.error(err, "There is no error");
       t.end();
@@ -40,17 +30,7 @@ test("Error loads up correctly for 404", t => {
     });
 });
 
-test("Results Page gives correct status response", t => {
-  request(app)
-    .get("/results")
-    .end((err, res) => {
-      t.equal(res.status, 200, "Status code is 200");
-      t.error(err, "There is no error");
-      t.end();
-    });
-});
-
-test("Results Page gives correct content type", t => {
+test("Results Page gives correct content type and 200 status", t => {
   request(app)
     .get("/results")
     .end((err, res) => {
@@ -59,22 +39,13 @@ test("Results Page gives correct content type", t => {
         "text/html; charset=utf-8",
         "Content type is HTML"
       );
+      t.equal(res.status, 200, "Status code is 200");
       t.error(err, "There is no error");
       t.end();
     });
 });
 
-test("Product Page gives correct status response for item 1", t => {
-  request(app)
-    .get("/product/1")
-    .end((err, res) => {
-      t.equal(res.status, 200, "Status code is 200");
-      t.error(err, "This is error");
-      t.end();
-    });
-});
-
-test("Product Page gives correct content type for item 1", t => {
+test("Product Page gives correct content type for item 1 and status 200", t => {
   request(app)
     .get("/product/1")
     .end((err, res) => {
@@ -83,6 +54,7 @@ test("Product Page gives correct content type for item 1", t => {
         "text/html; charset=utf-8",
         "Content type is HTML"
       );
+      t.equal(res.status, 200, "Status code is 200");
       t.error(err, "There is no error");
       t.end();
     });
