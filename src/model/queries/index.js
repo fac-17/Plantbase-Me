@@ -3,6 +3,7 @@ const getAllProducts = require("./getAllProducts");
 const getProductById = require("./getProductById");
 const getRatingsByProduct = require("./getRatingsByProduct");
 const getProductsbyCraving = require("./getProductsByCraving");
+const postProduct = require("./postProduct");
 const getTopCommentByProduct = require("./getTopCommentByProduct");
 const getProductAndRating = require("./getProductAndRating");
 
@@ -12,6 +13,7 @@ module.exports = {
   getProductById,
   getRatingsByProduct,
   getProductsbyCraving,
+  postProduct,
   getTopCommentByProduct,
   getProductAndRating
 };
