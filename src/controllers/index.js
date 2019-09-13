@@ -52,6 +52,16 @@ queries.getAllProducts().then(allProducts => console.log(allProducts));
 // res.render("added product", { postProduct }))
 
 //TEST TO GET ALL RATINGS FOR PRODUCT
+// queries.getAllProducts().then(allProducts => {
+//   queries
+//     .getRatingsSummaryOfList(allProducts)
+//     .then(list => console.log("rated list: ", list));
+// });
+
+// queries
+//   .getProductsbyCraving(1)
+//   .then(productList => console.log("this is the product list:", productList));
+
 // queries
 //   .getRatingsByProduct(1)
 //   .then(ratingsList =>
