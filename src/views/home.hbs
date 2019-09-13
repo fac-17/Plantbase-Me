@@ -3,12 +3,17 @@
         What are you looking for?
     </section>
 
-    <section class="craving-icon-slider">
-        {{#each cravings}}
-        <div class="craving-svg">
-            <image src="/assets/{{this.craving_name}}.svg" />
+    <section class="selection-slider">
+        <div class="content">
+            <div class="content-slider">
+                {{#each cravings}}
+                <figure class="craving-svg">
+                    <image src="/assets/{{this.craving_name}}.svg" />
+                </figure>
+                {{/each}}
+            </div>
         </div>
-        {{/each}}
+        </div>
     </section>
 
     <button class="select-button">Select</button>
