@@ -42,3 +42,14 @@ test("Error loads up correctly for 404", t => {
       t.end();
     });
 });
+
+test("Results Page gives correct response", t => {
+  request(app)
+    .get("/results")
+    .expect(200)
+    .end((err, res) => {
+      t.equal(res.status, 200, "Status code is 200");
+      t.error(err, "There is no error");
+      t.end();
+    });
+});
