@@ -8,7 +8,6 @@ const app = require("../app");
 test("Home route should return HTML content", t => {
   request(app)
     .get("/")
-    .expect("content-type", /html/)
     .end((err, res) => {
       t.equal(
         res.headers["content-type"],
@@ -23,7 +22,6 @@ test("Home route should return HTML content", t => {
 test("Home route should return with statuscode 200", t => {
   request(app)
     .get("/")
-    .expect(200)
     .end((err, res) => {
       t.plan(2);
       t.equal(res.status, 200, "Status code is 200");
@@ -35,7 +33,6 @@ test("Home route should return with statuscode 200", t => {
 test("Error loads up correctly for 404", t => {
   request(app)
     .get("/foobar")
-    .expect(404)
     .end((err, res) => {
       t.equal(res.status, 404, "Status code is 404");
       t.error(err, "There is no error");
@@ -46,7 +43,6 @@ test("Error loads up correctly for 404", t => {
 test("Results Page gives correct status response", t => {
   request(app)
     .get("/results")
-    .expect(200)
     .end((err, res) => {
       t.equal(res.status, 200, "Status code is 200");
       t.error(err, "There is no error");
@@ -57,7 +53,6 @@ test("Results Page gives correct status response", t => {
 test("Results Page gives correct content type", t => {
   request(app)
     .get("/results")
-    .expect("content-type", /html/)
     .end((err, res) => {
       t.equal(
         res.headers["content-type"],
@@ -72,7 +67,6 @@ test("Results Page gives correct content type", t => {
 test("Product Page gives correct status response for item 1", t => {
   request(app)
     .get("/product/1")
-    .expect(200)
     .end((err, res) => {
       t.equal(res.status, 200, "Status code is 200");
       t.error(err, "This is error");
@@ -83,7 +77,6 @@ test("Product Page gives correct status response for item 1", t => {
 test("Product Page gives correct content type for item 1", t => {
   request(app)
     .get("/product/1")
-    .expect("content-type", /html/)
     .end((err, res) => {
       t.equal(
         res.headers["content-type"],
