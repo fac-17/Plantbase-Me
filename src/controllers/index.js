@@ -42,7 +42,7 @@ router.get("/results", (req, res) => {
     .catch(err => next(err));
 });
 
-//TEST FOR POSTING NEW PRODUCT
+//TEST FOR POSTING A NEW PRODUCT
 // queries
 //   .postProduct(chosenProduct)
 //   .then(postProduct => console.log(postProduct))
@@ -51,12 +51,14 @@ router.get("/results", (req, res) => {
 queries.getAllProducts().then(allProducts => console.log(allProducts));
 // res.render("added product", { postProduct }))
 
+//TEST TO GET ALL RATINGS FOR PRODUCT
 // queries
 //   .getRatingsByProduct(1)
 //   .then(ratingsList =>
 //     console.log("this is the all the ratings for the product:", ratingsList)
 //   );
 
+// TEST TO GET PRODUCT LIST
 // queries
 //   .getProductsbyCraving(1)
 //   .then(productList => console.log("this is the product list:", productList));
