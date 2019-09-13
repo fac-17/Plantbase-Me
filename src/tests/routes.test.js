@@ -68,3 +68,29 @@ test("Results Page gives correct content type", t => {
       t.end();
     });
 });
+
+test("Product Page gives correct status response", t => {
+  request(app)
+    .get("/product-page")
+    .expect(200)
+    .end((err, res) => {
+      t.equal(res.status, 200, "Status code is 200");
+      t.error(err, "This is error");
+      t.end();
+    });
+});
+
+test("Product Page gives correct content type", t => {
+  request(app)
+    .get("/product-page")
+    .expect("content-type", /html/)
+    .end((err, res) => {
+      t.equal(
+        res.headers["content-type"],
+        "text/html; charset=utf-8",
+        "Content type is HTML"
+      );
+      t.error(err, "There is no error");
+      t.end();
+    });
+});
