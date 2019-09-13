@@ -69,9 +69,9 @@ test("Results Page gives correct content type", t => {
     });
 });
 
-test("Product Page gives correct status response", t => {
+test("Product Page gives correct status response for item 1", t => {
   request(app)
-    .get("/product-page")
+    .get("/product/1")
     .expect(200)
     .end((err, res) => {
       t.equal(res.status, 200, "Status code is 200");
@@ -80,9 +80,9 @@ test("Product Page gives correct status response", t => {
     });
 });
 
-test("Product Page gives correct content type", t => {
+test("Product Page gives correct content type for item 1", t => {
   request(app)
-    .get("/product-page")
+    .get("/product/1")
     .expect("content-type", /html/)
     .end((err, res) => {
       t.equal(
