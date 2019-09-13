@@ -155,6 +155,16 @@ INSERT INTO ratings (product_id, rating, comment, votes) VALUES
 (2, 5, 'I love it. So friggin great', 9),
 (3, 2, 'A bit of a let down', 2),
 (4, 1, 'Do they even know what cheese is like? this is just wierd mush', 6),
-(5, 4, 'More than okay', 5);
+(5, 4, 'More than okay', 5),
+(6, 4, 'Oooh First Comment', 1),
+(7, 4, 'Oooh First Comment', 1),
+(8, 4, 'Oooh First Comment', 1),
+(9, 4, 'Oooh First Comment', 1),
+(10, 4, 'Oooh First Comment', 1),
+(11, 4, 'Oooh First Comment', 1),
+(12, 4, 'Oooh First Comment', 1),
+(13, 4, 'Oooh First Comment', 1),
+(14, 4, 'Oooh First Comment', 1),
+(15, 4, 'Oooh First Comment', 1);
 
 COMMIT;
