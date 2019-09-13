@@ -30,16 +30,22 @@ router.get("/", (req, res) => {
     .catch(err => next(err));
 });
 
-queries
-  .getProductsbyCraving(1)
-  .then(productList => console.log("this is the product list:", productList));
-
 router.get("/results", (req, res) => {
   queries
     .getAllProducts()
     .then(allProducts => res.render("results", { allProducts }))
     .catch(err => next(err));
 });
+
+// queries.getAllProducts().then(allProducts => {
+//   queries
+//     .getRatingsSummaryOfList(allProducts)
+//     .then(list => console.log("rated list: ", list));
+// });
+
+// queries
+//   .getProductsbyCraving(1)
+//   .then(productList => console.log("this is the product list:", productList));
 
 // queries
 //   .getRatingsByProduct(1)

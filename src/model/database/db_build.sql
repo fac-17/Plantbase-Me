@@ -44,12 +44,12 @@ INSERT INTO products (product_name, product_description, where_to_buy, product_i
 (
     'Engvita Yeast Flakes B12',
     'A gluten-free, vegan food with a cheesy, nutty taste. These yeast flakes are the ideal condiment to sprinkle on soups, stews, casseroles, toppings, salads and breakfast cereals to enhance the flavour.
-These yeast flakes have been fortified with Vitamin B12, which is considered to be an essential supplement to the vegan diet.
-',
-'{"Holland&Barrett", "Ocado", "Tesco"}',
-'https://i.imgur.com/ct10sIE.jpg',
-1,
-3.10
+    These yeast flakes have been fortified with Vitamin B12, which is considered to be an essential supplement to the vegan diet.
+    ',
+    '{"Holland&Barrett", "Ocado", "Tesco"}',
+    'https://i.imgur.com/ct10sIE.jpg',
+    1,
+    3.10
 ),
 (
     'Sainsburys Free From Cheddar-Style With Onion',
@@ -78,7 +78,13 @@ These yeast flakes have been fortified with Vitamin B12, which is considered to 
 
 
 INSERT INTO ratings (product_id, rating, comment, votes) VALUES
-(1, 4, 'Great!, Tastes just like original cheddar', 5);
-
+(1, 4, 'Great!, Tastes just like original cheddar', 6),
+(1, 5, 'Why would someone even eat real cheese when this exists???', 1),
+(1, 1, 'Did not melt on pizza', 2),
+(1, 3, 'Did the job', 5),
+(2, 5, 'I love it. So friggin great', 9),
+(3, 2, 'A bit of a let down', 2),
+(4, 1, 'Do they even know what cheese is like? this is just wierd mush', 6),
+(5, 4, 'More than okay', 5);
 
 COMMIT;
