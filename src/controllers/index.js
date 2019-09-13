@@ -1,7 +1,23 @@
 const express = require("express");
-const queries = require("../model/queries");
 const router = express.Router();
+
 const error = require("./error");
+const home = require("./home");
+const results = require("./results");
+
+const queries = require("../model/queries");
+
+router.get("/", home.get);
+router.get("/results", results.get);
+
+router.use(error.client);
+router.use(error.server);
+
+module.exports = router;
+
+// router.get("/product-page", (req, res) => {
+//   res.render("productPage", { chosenProduct });
+// });
 
 // const allProducts = [
 //   {
@@ -23,20 +39,6 @@ const error = require("./error");
 //   where_to_buy: ["Waitrose", "Asda", "Morrisons"]
 // };
 
-router.get("/", (req, res) => {
-  queries
-    .getCravings()
-    .then(cravings => res.render("home", { cravings }))
-    .catch(err => next(err));
-});
-
-router.get("/results", (req, res) => {
-  queries
-    .getAllProducts()
-    .then(allProducts => res.render("results", { allProducts }))
-    .catch(err => next(err));
-});
-
 // queries.getAllProducts().then(allProducts => {
 //   queries
 //     .getRatingsSummaryOfList(allProducts)
@@ -56,12 +58,3 @@ router.get("/results", (req, res) => {
 // queries
 //   .getProductsbyCraving(1)
 //   .then(productList => console.log("this is the product list:", productList));
-
-// router.get("/product-page", (req, res) => {
-//   res.render("productPage", { chosenProduct });
-// });
-
-router.use(error.client);
-router.use(error.server);
-
-module.exports = router;
