@@ -42,3 +42,55 @@ test("Error loads up correctly for 404", t => {
       t.end();
     });
 });
+
+test("Results Page gives correct status response", t => {
+  request(app)
+    .get("/results")
+    .expect(200)
+    .end((err, res) => {
+      t.equal(res.status, 200, "Status code is 200");
+      t.error(err, "There is no error");
+      t.end();
+    });
+});
+
+test("Results Page gives correct content type", t => {
+  request(app)
+    .get("/results")
+    .expect("content-type", /html/)
+    .end((err, res) => {
+      t.equal(
+        res.headers["content-type"],
+        "text/html; charset=utf-8",
+        "Content type is HTML"
+      );
+      t.error(err, "There is no error");
+      t.end();
+    });
+});
+
+test("Product Page gives correct status response for item 1", t => {
+  request(app)
+    .get("/product/1")
+    .expect(200)
+    .end((err, res) => {
+      t.equal(res.status, 200, "Status code is 200");
+      t.error(err, "This is error");
+      t.end();
+    });
+});
+
+test("Product Page gives correct content type for item 1", t => {
+  request(app)
+    .get("/product/1")
+    .expect("content-type", /html/)
+    .end((err, res) => {
+      t.equal(
+        res.headers["content-type"],
+        "text/html; charset=utf-8",
+        "Content type is HTML"
+      );
+      t.error(err, "There is no error");
+      t.end();
+    });
+});
