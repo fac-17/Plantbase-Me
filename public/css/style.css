@@ -51,19 +51,23 @@ body > section.nav-bar > div.nav-bar-content > svg:nth-child(2) {
 }
 
 .content {
+  /* scene */
   margin: auto;
-  width: 120px;
+  width: 512px;
+  height: 512px;
   perspective: 1000px;
   position: relative;
   padding-top: 20px;
+  border: 1px solid #ccc;
 }
 
 .content-slider {
-  width: 100%;
-  position: relative;
-  float: right;
-  animation: rotar 15s infinite linear;
+  /* carousel */
+  position: absolute;
+  transform: translateZ(-256px);
   transform-style: preserve-3d;
+  transition: transform 1s;
+  /* animation: rotar 15s infinite linear; */
 }
 
 .content-slider:hover {
@@ -72,27 +76,28 @@ body > section.nav-bar > div.nav-bar-content > svg:nth-child(2) {
 }
 
 .content-slider figure {
-  width: 200%;
-  height: 20em;
-  border: 1px solid white;
-  overflow: hidden;
+  width: 412px;
+  height: 412px;
+  left: 10px;
+  top: 10px;
+  border: 2px solid black;
   position: absolute;
 }
 
 .content-slider figure:nth-child(1) {
-  transform: rotateY(0deg) translateZ(300px);
+  transform: rotateY(0deg) translateZ(256px);
 }
 
 .content-slider figure:nth-child(2) {
-  transform: rotateY(90deg) translateZ(300px);
+  transform: rotateY(90deg) translateZ(256px);
 }
 
 .content-slider figure:nth-child(3) {
-  transform: rotateY(180deg) translateZ(300px);
+  transform: rotateY(180deg) translateZ(256px);
 }
 
 .content-slider figure:nth-child(4) {
-  transform: rotateY(270deg) translateZ(300px);
+  transform: rotateY(270deg) translateZ(256px);
 }
 
 .craving-svg {
@@ -114,11 +119,11 @@ body > section.nav-bar > div.nav-bar-content > svg:nth-child(2) {
   transition: all 300ms;
 }
 
-@keyframes rotar {
+/* @keyframes rotar {
   from {
     transform: rotateY(0deg);
   }
   to {
     transform: rotateY(360deg);
   }
-}
+} */
