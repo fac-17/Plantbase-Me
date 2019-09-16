@@ -6,6 +6,7 @@ const getProductsbyCraving = require("./getProductsByCraving");
 const postProduct = require("./postProduct");
 const getTopCommentByProduct = require("./getTopCommentByProduct");
 const getProductAndRating = require("./getProductAndRating");
+const postRatingComment = require("./postRatingComment");
 
 module.exports = {
   getCravings,
@@ -15,5 +16,6 @@ module.exports = {
   getProductsbyCraving,
   postProduct,
   getTopCommentByProduct,
-  getProductAndRating
+  getProductAndRating,
+  postRatingComment
 };
