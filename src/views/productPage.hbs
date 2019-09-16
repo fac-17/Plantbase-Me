@@ -9,6 +9,20 @@
     <p>Price: {{chosenProduct.product_price}}</p>
 
     <p>{{chosenProduct.product_description}}</p>
+
+    <form action="/submitrating">
+        <label for="rating">Rating</label>
+        <select id="rating">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+        <label for="comment">Comment: </label>
+        <input id="comment" type="text">
+        <input type="submit">
+    </form>
     <article>!!Rating goes here!!</article>
     <section>!!Comments go here!!</section>
 </section>
