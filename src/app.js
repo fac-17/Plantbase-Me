@@ -3,7 +3,7 @@ const exphbs = require("express-handlebars");
 const path = require("path");
 
 const bodyParser = require("body-parser");
-const controllers = require("./controllers/index");
+const controllers = require("./controllers");
 
 const app = express();
 
@@ -25,10 +25,5 @@ app.engine(
 
 app.set("port", process.env.PORT || 3000);
 app.use(controllers);
-
-// // hypothetical test
-// const dbTest = (a, b) => {
-//   return a + b;
-// };
 
 module.exports = app;
