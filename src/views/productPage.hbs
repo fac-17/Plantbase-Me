@@ -10,17 +10,19 @@
 
     <p>{{chosenProduct.product_description}}</p>
 
-    <form action="/submitrating">
+    <form action="/submitrating" method="POST">
+        <input type="text" name="product_id" readonly value={{chosenProduct.id}}>
         <label for="rating">Rating</label>
-        <select id="rating">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
+        <select id="rating" name="rating">
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
         </select>
         <label for="comment">Comment: </label>
-        <input id="comment" type="text">
+        <input id="comment" type="text" name="comment">
+
         <input type="submit">
     </form>
     <article>!!Rating goes here!!</article>
