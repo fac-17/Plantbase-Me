@@ -2,16 +2,14 @@
     <h2 id="results-title">Choose a Product:</h2>
 
     <section class="results-list">
+
         {{#each allProducts}}
-        <article class="result">
-            <h3><a href="/product/{{this.id}}">{{this.product_name}}</a></h3>
-            <img src="{{this.product_image}}" />
-            <p>{{this.product_description}}</p>
-            <p>{{this.product_avg_rating}}</p>
-
-
+        <article class="result-card">
+            <h3 class="result-title"><a href="/product/{{this.id}}">{{this.product_name}}</a></h3>
+            <img class="result-image" src="{{this.product_image}}" />
+            <p class="result-description">{{this.product_description}}</p>
+            <p class="result-rating">{{this.product_avg_rating}}</p>
         </article>
-
         {{/each}}
 
     </section>
