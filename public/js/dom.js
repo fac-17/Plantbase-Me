@@ -12,9 +12,11 @@ const addUpvote = () => {
   const idNumber = event.target.id.split("-")[3];
   const numberOfUpvotes = document.getElementById(`upvotes-${idNumber}`);
 
-  const currentVotes = numberOfUpvotes.innerHTML;
-  numberOfUpvotes.innerHTML = Number(currentVotes) + 1;
-  console.log("numberOfUpvotes = ", numberOfUpvotes.innerHTML);
+  const currentVotes = numberOfUpvotes.textContent;
+  numberOfUpvotes.textContent = Number(currentVotes) + 1;
+
+  const upvoteButton = document.getElementById(event.target.id);
+  upvoteButton.style.display = "none";
 };
 
 upvoteButtons.map(upvoteButton => {
