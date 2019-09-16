@@ -55,14 +55,14 @@ body > section.nav-bar > div.nav-bar-content > svg:nth-child(2) {
   width: 120px;
   perspective: 1000px;
   position: relative;
-  padding-top: 80px;
+  padding-top: 20px;
 }
 
 .content-slider {
   width: 100%;
-  position: absolute;
+  position: relative;
   float: right;
-  animation: rotation 15s infinite linear;
+  animation: rotar 15s infinite linear;
   transform-style: preserve-3d;
 }
 
@@ -72,25 +72,53 @@ body > section.nav-bar > div.nav-bar-content > svg:nth-child(2) {
 }
 
 .content-slider figure {
-  width: 100%;
-  height: 120px;
-  border: 1px solid #4d444d;
+  width: 200%;
+  height: 20em;
+  border: 1px solid white;
   overflow: hidden;
   position: absolute;
 }
 
 .content-slider figure:nth-child(1) {
-  transform: rotateY(-40deg) translateZ(300px);
-}
-
-.content-slider figure:nth-child(2) {
   transform: rotateY(0deg) translateZ(300px);
 }
 
+.content-slider figure:nth-child(2) {
+  transform: rotateY(90deg) translateZ(300px);
+}
+
 .content-slider figure:nth-child(3) {
-  transform: rotateY(40deg) translateZ(300px);
+  transform: rotateY(180deg) translateZ(300px);
 }
 
 .content-slider figure:nth-child(4) {
-  transform: rotateY(80deg) translateZ(300px);
+  transform: rotateY(270deg) translateZ(300px);
+}
+
+.craving-svg {
+  background: var(--white);
+  position: absolute;
+  box-shadow: 0px 0px 20px 0px #000;
+  border-radius: 2px;
+}
+
+.content-slider img {
+  image-rendering: auto;
+  transition: all 300ms;
+  width: 100%;
+  height: 100%;
+}
+
+.content-slider img:hover {
+  transform: scale(1.2);
+  transition: all 300ms;
+}
+
+@keyframes rotar {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
 }
