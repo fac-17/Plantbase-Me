@@ -1,6 +1,7 @@
 module.exports = ratings => {
-  return (
+  let averageRating =
     ratings.reduce((acc, ratingRow) => acc + ratingRow.rating, 0) /
-    ratings.length
-  );
+    ratings.length;
+
+  return Math.round(averageRating * 2) / 2;
 };
