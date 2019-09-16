@@ -144,6 +144,55 @@ INSERT INTO products (product_name, product_description, where_to_buy, product_i
     'https://img.veganlogin.com/KwrqzKeLBthFa9wq.jpg',
     2,
     1.25
+), (
+    'Booja Booja - Organic Toffee Strudel',
+    '6 Melt-in-the-mouth dark chocolate caramel truffles reminiscent of quirky puddingy delights with caramelised apple pieces, cinnamon kisses and chewy toffee hugs.',
+    '{"Vegans United"}',
+    'https://img.veganlogin.com/owBqGmdLALHLaKjK.jpg',
+    4,
+    1.25
+), (
+    'Taza Organic Dark Chocolate Bar – Wicked Dark',
+    'Taza Chocolate 95% wicked dark chocolate bar is USDA-Certified Organic, Kosher, Non-GMO Project Verified, vegan and gluten-free. Each 2.5 oz. bar is made with stone ground chocolate, organic cane sugar and organic vanilla beans in Somerville, Massachusetts.',
+    '{"Vegans United"}',
+    'https://img.veganlogin.com/FNSPvHCsJCCpPGL9.jpg',
+    4,
+    1.25
+), (
+    'Lulu’s Chocolate- Aztec Crunch Bar',
+    'Inspired by ancient Aztec recipes, this sensually smooth dark chocolate cradles cacao nibs and coconut sugar to make Aztec Crunch deliciously irresistible!',
+    '{"Vegans United"}',
+    'https://img.veganlogin.com/jkKtrHHd6z6n9vwO.jpg',
+    4,
+    1.25
+), (
+    'Foodie Fuel- Fuel Snacks – Swiss Chocolate',
+    'A delectable chocolate flavor that will fill your body with a sense of deep satisfying goodness. Made with cacao nibs and organic cocoa powder, the Swiss Chocolate Snacker Crisps are dangerously delectable with a superbly salted, chocolatey taste.',
+    '{"Vegans United"}',
+    'https://img.veganlogin.com/thGRHkj9gYYMvdk0.png',
+    4,
+    1.25
+), (
+    'Foodie Fuel- Fuel Snacks – Cinnamon Ginger',
+    'Start your day with the sweet- spicy taste of cinnamon, the zing of ginger and all of the health benefits of sunflower, pumpkin, flax and chia seeds. Foodie Fuel’s Cinnamon Ginger Snack Crisps are stunningly scrumptious – gingery, flaky, satisfying sweetness.',
+    '{"Vegans United"}',
+    'https://img.veganlogin.com/z2lh0S36bdhJ83rZ.png',
+    4,
+    1.25
+), (
+    'Lulu’s Chocolate- Smoked Sea Salt Almond Raw Bar',
+    'As velvety smooth dark chocolate cradles crunchy sprouted almonds, smoked sea salt mingles with coconut sugar sweetness… oh so delectable!',
+    '{"Vegans United"}',
+    'https://img.veganlogin.com/BHV8wT7Hn7fHWEND.jpg',
+    4,
+    1.25
+), (
+    'Taza Organic Dark Chocolate Bar – Toffee, Almond & Sea Salt',
+    'Taza Chocolate toffee almond & sea salt 60% dark chocolate bar is USDA-Certified Organic, Kosher, Non-GMO Project Verified, vegan and gluten-free. Each 2.5 oz. bar is made with stone ground chocolate, organic cane sugar and organic vanilla beans in Somerville, Massachusetts.',
+    '{"Vegans United"}',
+    'https://img.veganlogin.com/grTSMcRQlHLXpS9E.jpg',
+    4,
+    1.25
 );
 
 
