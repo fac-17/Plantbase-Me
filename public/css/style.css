@@ -41,3 +41,11 @@ body > section.nav-bar > div.nav-bar-content > svg:nth-child(2) {
   border-right: 50vw solid transparent;
   border-top: 8vw solid var(--lightblue);
 }
+
+/* Results page */
+
+.result-card {
+  margin: 10px;
+  box-shadow: 5px 5px 10px var(--grey);
+  border-radius: 20px;
+}
