@@ -52,7 +52,7 @@ body > section.nav-bar > div.nav-bar-content > svg:nth-child(2) {
 
 .content {
   margin: auto;
-  width: 190px;
+  width: 120px;
   perspective: 1000px;
   position: relative;
   padding-top: 80px;
@@ -77,41 +77,20 @@ body > section.nav-bar > div.nav-bar-content > svg:nth-child(2) {
   border: 1px solid #4d444d;
   overflow: hidden;
   position: absolute;
-  background-size: 120px 120px;
 }
 
 .content-slider figure:nth-child(1) {
-  transform: rotateY(0deg) translateZ(300px);
+  transform: rotateY(-40deg) translateZ(300px);
 }
 
 .content-slider figure:nth-child(2) {
-  transform: rotateY(40deg) translateZ(300px);
+  transform: rotateY(0deg) translateZ(300px);
 }
 
 .content-slider figure:nth-child(3) {
-  transform: rotateY(80deg) translateZ(300px);
+  transform: rotateY(40deg) translateZ(300px);
 }
 
 .content-slider figure:nth-child(4) {
-  transform: rotateY(120deg) translateZ(300px);
-}
-
-.content-slider figure:nth-child(5) {
-  transform: rotateY(160deg) translateZ(300px);
-}
-
-.content-slider figure:nth-child(6) {
-  transform: rotateY(200deg) translateZ(300px);
-}
-
-.content-slider figure:nth-child(7) {
-  transform: rotateY(240deg) translateZ(300px);
-}
-
-.content-slider figure:nth-child(8) {
-  transform: rotateY(280deg) translateZ(300px);
-}
-
-.content-slider figure:nth-child(9) {
-  transform: rotateY(320deg) translateZ(300px);
+  transform: rotateY(80deg) translateZ(300px);
 }
