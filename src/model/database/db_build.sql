@@ -216,3 +216,4 @@ INSERT INTO ratings (product_id, rating, comment, votes) VALUES
 (15, 4, 'Oooh First Comment', 1);
 
 COMMIT;
+
