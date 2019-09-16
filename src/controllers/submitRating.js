@@ -1,5 +1,5 @@
 const postRatingComment = require("../model/queries/postRatingComment");
 
-exports.post = (req, res, next) => {
+exports.post = req => {
   postRatingComment(req.body);
 };
