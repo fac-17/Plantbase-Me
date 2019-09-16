@@ -26,7 +26,8 @@
     "dev": "NODE_ENV=local nodemon src/index.js",
     "lint": "eslint *.*",
     "db:build": "NODE_ENV=production node src/model/database/db_build.js",
-    "db:build-local": "NODE_ENV=local node src/model/database/db_build.js"
+    "db:build-local": "NODE_ENV=local node src/model/database/db_build.js",
+    "watch": "node src/index.js"
   },
   "repository": {
     "type": "git",
