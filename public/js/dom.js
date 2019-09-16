@@ -25,6 +25,8 @@ var nextButton = document.querySelector(".next-button");
 nextButton.addEventListener("click", function() {
   selectedIndex++;
   rotateCarousel();
+});
+
 const upvoteButtons = Array.from(
   document.getElementsByClassName("upvote-button")
 );
