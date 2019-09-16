@@ -53,16 +53,16 @@ body > section.nav-bar > div.nav-bar-content > svg:nth-child(2) {
 .content {
   margin: auto;
   width: 190px;
-  perspective: 10000px;
+  perspective: 1000px;
   position: relative;
   padding-top: 80px;
 }
 
 .content-slider {
-  width: 1000%;
+  width: 100%;
   position: absolute;
   float: right;
-  animation: rotar 15s infinite linear;
+  animation: rotation 15s infinite linear;
   transform-style: preserve-3d;
 }
 
@@ -77,6 +77,7 @@ body > section.nav-bar > div.nav-bar-content > svg:nth-child(2) {
   border: 1px solid #4d444d;
   overflow: hidden;
   position: absolute;
+  background-size: 120px 120px;
 }
 
 .content-slider figure:nth-child(1) {
@@ -113,7 +114,4 @@ body > section.nav-bar > div.nav-bar-content > svg:nth-child(2) {
 
 .content-slider figure:nth-child(9) {
   transform: rotateY(320deg) translateZ(300px);
-}
-
-.craving-svg {
 }
