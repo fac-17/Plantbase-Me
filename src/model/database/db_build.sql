@@ -22,7 +22,6 @@ CREATE TABLE ratings (
     product_id          INTEGER         NOT NULL,
     rating              INTEGER         NOT NULL,
     comment             VARCHAR(500),
-    tags                VARCHAR(200),
     votes               INTEGER
 );
 
