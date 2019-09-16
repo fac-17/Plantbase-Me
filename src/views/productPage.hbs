@@ -25,6 +25,13 @@
 
         <input type="submit">
     </form>
-    <article>!!Rating goes here!!</article>
-    <section>!!Comments go here!!</section>
+    {{!-- <article>{{findAverageRating ratings}}</article> --}}
+    <section>
+        {{#each ratings}}
+        <article>
+            <p>{{this.comment}}</p>
+            <p>Rating: {{this.rating}}</p>
+        </article>
+        {{/each}}
+    </section>
 </section>
