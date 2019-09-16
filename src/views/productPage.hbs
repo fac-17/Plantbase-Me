@@ -9,6 +9,31 @@
     <p>Price: {{chosenProduct.product_price}}</p>
 
     <p>{{chosenProduct.product_description}}</p>
-    <article>!!Rating goes here!!</article>
-    <section>!!Comments go here!!</section>
+
+    <form action="/submitrating" method="POST">
+        <input type="text" name="product_id" readonly value={{chosenProduct.id}}>
+        <label for="rating">Rating</label>
+        <select id="rating" name="rating">
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+        </select>
+        <label for="comment">Comment: </label>
+        <input id="comment" type="text" name="comment">
+
+        <input type="submit">
+    </form>
+    <article>{{returnAverageRating ratings}}</article>
+    <section>
+        {{#each ratings}}
+        <article>
+            <p>{{this.comment}}</p>
+            <p>Rating: {{this.rating}}</p>
+            <p>UpVotes: <span id='upvotes-{{this.id}}'>{{this.votes}}</span></p>
+            <button id='upvote-button-{{chosenProduct.id}}-{{this.id}}' class="upvote-button">Upvote</button>
+        </article>
+        {{/each}}
+    </section>
 </section>

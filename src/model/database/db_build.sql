@@ -22,7 +22,6 @@ CREATE TABLE ratings (
     product_id          INTEGER         NOT NULL,
     rating              INTEGER         NOT NULL,
     comment             VARCHAR(500),
-    tags                VARCHAR(200),
     votes               INTEGER
 );
 
@@ -217,3 +216,4 @@ INSERT INTO ratings (product_id, rating, comment, votes) VALUES
 (15, 4, 'Oooh First Comment', 1);
 
 COMMIT;
+

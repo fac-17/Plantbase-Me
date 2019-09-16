@@ -7,6 +7,7 @@ const postProduct = require("./postProduct");
 const getTopCommentByProduct = require("./getTopCommentByProduct");
 const getProductAndRating = require("./getProductAndRating");
 const postRatingComment = require("./postRatingComment");
+const postCommentUpvote = require("./postCommentUpvote");
 
 module.exports = {
   getCravings,
@@ -17,5 +18,6 @@ module.exports = {
   postProduct,
   getTopCommentByProduct,
   getProductAndRating,
-  postRatingComment
+  postRatingComment,
+  postCommentUpvote
 };
