@@ -31,6 +31,8 @@
         <article>
             <p>{{this.comment}}</p>
             <p>Rating: {{this.rating}}</p>
+            <p>UpVotes: <span id='upvotes-{{this.id}}'>{{this.votes}}</span></p>
+            <button id='upvote-button-{{chosenProduct.id}}-{{this.id}}' class="upvote-button">Upvote</button>
         </article>
         {{/each}}
     </section>
