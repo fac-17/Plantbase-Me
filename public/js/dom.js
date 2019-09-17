@@ -16,16 +16,20 @@ function rotateCarousel() {
 }
 
 var prevButton = document.querySelector(".previous-button");
-prevButton.addEventListener("click", function() {
-  selectedIndex--;
-  rotateCarousel();
-});
+if (prevButton) {
+  prevButton.addEventListener("click", function() {
+    selectedIndex--;
+    rotateCarousel();
+  });
+}
 
 var nextButton = document.querySelector(".next-button");
-nextButton.addEventListener("click", function() {
-  selectedIndex++;
-  rotateCarousel();
-});
+if (nextButton) {
+  nextButton.addEventListener("click", function() {
+    selectedIndex++;
+    rotateCarousel();
+  });
+}
 
 const upvoteButtons = Array.from(
   document.getElementsByClassName("upvote-button")
@@ -42,6 +46,8 @@ const addUpvote = () => {
   upvoteButton.style.display = "none";
 };
 
-upvoteButtons.map(upvoteButton => {
-  upvoteButton.addEventListener("click", () => addUpvote());
-});
+if (upvoteButtons) {
+  upvoteButtons.map(upvoteButton => {
+    upvoteButton.addEventListener("click", () => addUpvote());
+  });
+}
