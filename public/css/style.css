@@ -146,6 +146,8 @@ body > section.nav-bar > div.nav-bar-content > svg:nth-child(2) {
   max-width: 300px;
 }
 
+/* back button*/
+
 .back-button {
   background-color: #80a4b2;
 }
