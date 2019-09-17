@@ -145,3 +145,20 @@ body > section.nav-bar > div.nav-bar-content > svg:nth-child(2) {
   max-height: 300px;
   max-width: 300px;
 }
+
+/* Burger Menu */
+
+#burgerMenu {
+  background: var(--lightblue);
+  text-align: right;
+  position: absolute;
+  top: 12vh;
+  right: 0;
+  z-index: 1;
+  transform: translateX(100%);
+}
+
+.burgerItem {
+  list-style: none;
+  padding: 2em;
+}
