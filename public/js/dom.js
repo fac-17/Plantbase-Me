@@ -45,3 +45,12 @@ const addUpvote = () => {
 upvoteButtons.map(upvoteButton => {
   upvoteButton.addEventListener("click", () => addUpvote());
 });
+
+// Burger menu animation
+
+const burgerButton = document.querySelector("#burgerMenuIcon");
+const burgerMenu = document.querySelector("#burgerMenu");
+
+burgerButton.addEventListener("click", () => {
+  burgerMenu.classList.toggle("visible");
+});

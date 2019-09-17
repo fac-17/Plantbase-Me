@@ -156,6 +156,11 @@ body > section.nav-bar > div.nav-bar-content > svg:nth-child(2) {
   right: 0;
   z-index: 1;
   transform: translateX(100%);
+  transition: all 0.5s ease;
+}
+
+#burgerMenu.visible {
+  transform: translateX(0);
 }
 
 .burgerItem {
