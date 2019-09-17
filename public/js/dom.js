@@ -39,8 +39,9 @@ const upvoteButtons = Array.from(
 
 const postUpvote = commentId => {
   console.log("posting upvote with comment id", commentId);
-  fetch(`/upvote/${commentId}`, {
-    method: "POST"
+  fetch(`/upvote`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" }
   })
     .then(function(data) {
       console.log("Request success: ", data);
