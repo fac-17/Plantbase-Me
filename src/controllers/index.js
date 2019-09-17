@@ -19,7 +19,7 @@ router.get("/product/:id", product.get);
 router.get("/aboutus", aboutUs.get);
 router.get("/thanksforsubmission", thanksForSubmission.get);
 router.get("/howtocontribute", howToContibute.get);
-router.post("/submitrating", submitRating.post);
+router.post("/submitrating/:prodid", submitRating.post);
 router.post("/addproduct", addProduct.post);
 
 router.use(error.client);
