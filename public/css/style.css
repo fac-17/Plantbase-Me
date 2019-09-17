@@ -163,7 +163,21 @@ body > section.nav-bar > div.nav-bar-content > svg:nth-child(2) {
   transform: translateX(0);
 }
 
+#burgerList {
+  padding: 0;
+  margin: 0;
+}
+
 .burgerItem {
   list-style: none;
-  padding: 2em;
+  border: 0.1em solid var(--grey);
+  border-right-style: none;
+  border-left-style: none;
+}
+
+.burgerItem > a {
+  text-decoration: none;
+  color: black;
+  padding: 2em 4em;
+  display: block;
 }
