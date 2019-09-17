@@ -12,6 +12,7 @@ const submitRating = require("./submitRating");
 const submitUpvote = require("./submitUpvote");
 const addProduct = require("./addProduct");
 const error = require("./error");
+const letMeAdd = require("./letMeAdd");
 
 router.get("/", home.get);
 router.get("/results", allResults.get);
@@ -21,6 +22,7 @@ router.get("/aboutus", aboutUs.get);
 router.get("/thanksforsubmission", thanksForSubmission.get);
 router.get("/howtocontribute", howToContibute.get);
 router.post("/submitrating/:prodid", submitRating.post);
+router.get("/letmeadd", letMeAdd.get);
 router.post("/addproduct", addProduct.post);
 router.post("/upvote", submitUpvote.post);
 

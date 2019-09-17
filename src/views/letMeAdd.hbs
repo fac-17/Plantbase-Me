@@ -1,0 +1,28 @@
+<section id="#addAProductForm">
+    <form action="/addProduct" method="POST">
+        <label for="productName">Product Name: </label>
+        <input id="productName" name="product_name"><br>
+
+        <label for="productDescription">Product Description: </label>
+        <input id="productDescription" name="product_description"><br>
+
+        <label for="cravingID">Choose a craving: </label>
+        <select id="cravingID" name="craving_id">
+            <option value=1>Cheese</option>
+            <option value=2>Meat</option>
+            <option value=3>Milk</option>
+            <option value=4>Sweet</option>
+        </select><br>
+
+        <label for="whereToBuy">Where can you buy this?</label>
+        <input id="whereToBuy" name="where_to_buy"><br>
+
+        <label for="productImage">Product Image URL: </label>
+        <input id="productImage" name="product_image"><br>
+
+        <label for="price">Product Price</label>
+        <input type="number" step="0.01" min="0.01" id="price" name="product_price"><br>
+
+        <input type="submit">
+    </form>
+</section>
