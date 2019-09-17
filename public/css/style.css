@@ -48,14 +48,6 @@ body > section.nav-bar > div.nav-bar-content > svg:nth-child(2) {
   box-sizing: border-box;
 }
 
-/* .selection-slider {
-  margin: 0 auto;
-  padding-top: 50px;
-  height: 700px;
-  background: var(--grey);
-  box-sizing: border-box;
-} */
-
 .content {
   /* scene */
   margin: auto;
@@ -75,22 +67,11 @@ body > section.nav-bar > div.nav-bar-content > svg:nth-child(2) {
   transform: translateZ(-288px);
   transform-style: preserve-3d;
   transition: transform 1s;
-  /* animation: rotar 15s infinite linear; */
 }
 
-/* .content-slider:hover {
-  animation-play-state: paused;
+.content-slider:hover {
   cursor: pointer;
-} */
-
-/* .content-slider figure {
-  width: 412px;
-  height: 412px;
-  left: 10px;
-  top: 10px;
-  border: 2px solid black;
-  position: absolute;
-} */
+}
 
 .content-slider figure:nth-child(1) {
   transform: rotateY(0deg) translateZ(256px);
