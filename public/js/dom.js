@@ -1,3 +1,5 @@
+// Redirect to homepage when logo clicked
+
 const logo = document.getElementById("logo");
 
 logo.addEventListener("click", () => {
@@ -7,7 +9,7 @@ logo.addEventListener("click", () => {
 // slider on hp
 var contentSlider = document.querySelector(".content-slider");
 var slideCount = 4;
-var selectedIndex = 0;
+var selectedIndex = 4;
 
 function rotateCarousel() {
   var angle = (selectedIndex / slideCount) * -360;
@@ -18,14 +20,28 @@ function rotateCarousel() {
 var prevButton = document.querySelector(".previous-button");
 prevButton.addEventListener("click", function() {
   selectedIndex--;
+  limitSelectedIndex();
   rotateCarousel();
 });
 
 var nextButton = document.querySelector(".next-button");
 nextButton.addEventListener("click", function() {
   selectedIndex++;
+  limitSelectedIndex();
   rotateCarousel();
 });
+
+const limitSelectedIndex = () => {
+  if (selectedIndex === 5) {
+    selectedIndex = 1;
+  } else if (selectedIndex <= 0) {
+    selectedIndex = 4;
+  }
+};
+
+// Pass selected category to the back-end
+
+// Upvote comments
 
 const upvoteButtons = Array.from(
   document.getElementsByClassName("upvote-button")
