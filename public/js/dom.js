@@ -45,3 +45,10 @@ const addUpvote = () => {
 upvoteButtons.map(upvoteButton => {
   upvoteButton.addEventListener("click", () => addUpvote());
 });
+
+//back button
+
+var backButton = document.querySelector(".back-button");
+backButton.addEventListener("click", function() {
+  window.history.back();
+});
