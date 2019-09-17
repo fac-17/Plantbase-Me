@@ -16,16 +16,20 @@ function rotateCarousel() {
 }
 
 var prevButton = document.querySelector(".previous-button");
-prevButton.addEventListener("click", function() {
-  selectedIndex--;
-  rotateCarousel();
-});
+if (prevButton) {
+  prevButton.addEventListener("click", function() {
+    selectedIndex--;
+    rotateCarousel();
+  });
+}
 
 var nextButton = document.querySelector(".next-button");
-nextButton.addEventListener("click", function() {
-  selectedIndex++;
-  rotateCarousel();
-});
+if (nextButton) {
+  nextButton.addEventListener("click", function() {
+    selectedIndex++;
+    rotateCarousel();
+  });
+}
 
 const upvoteButtons = Array.from(
   document.getElementsByClassName("upvote-button")
@@ -51,4 +55,13 @@ upvoteButtons.map(upvoteButton => {
 const backButton = document.querySelector(".back-button");
 backButton.addEventListener("click", () => {
   window.history.back();
+});
+
+// Burger menu animation
+
+const burgerButton = document.querySelector("#burgerMenuIcon");
+const burgerMenu = document.querySelector("#burgerMenu");
+
+burgerButton.addEventListener("click", () => {
+  burgerMenu.classList.toggle("visible");
 });

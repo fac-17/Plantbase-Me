@@ -147,5 +147,41 @@ body > section.nav-bar > div.nav-bar-content > svg:nth-child(2) {
 }
 
 .back-button {
-  background-color: red;
+  background-color: #80a4b2;
+}
+
+/* Burger Menu */
+
+#burgerMenu {
+  background: var(--lightblue);
+  text-align: right;
+  position: absolute;
+  top: 12vh;
+  right: 0;
+  z-index: 1;
+  transform: translateX(100%);
+  transition: all 0.5s ease;
+}
+
+#burgerMenu.visible {
+  transform: translateX(0);
+}
+
+#burgerList {
+  padding: 0;
+  margin: 0;
+}
+
+.burgerItem {
+  list-style: none;
+  border: 0.1em solid var(--grey);
+  border-right-style: none;
+  border-left-style: none;
+}
+
+.burgerItem > a {
+  text-decoration: none;
+  color: black;
+  padding: 2em 4em;
+  display: block;
 }
