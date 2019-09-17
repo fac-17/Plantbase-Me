@@ -18,18 +18,22 @@ function rotateCarousel() {
 }
 
 var prevButton = document.querySelector(".previous-button");
-prevButton.addEventListener("click", function() {
-  selectedIndex--;
-  limitSelectedIndex();
-  rotateCarousel();
-});
+if (prevButton) {
+  prevButton.addEventListener("click", function() {
+    selectedIndex--;
+    limitSelectedIndex();
+    rotateCarousel();
+  });
+}
 
 var nextButton = document.querySelector(".next-button");
-nextButton.addEventListener("click", function() {
-  selectedIndex++;
-  limitSelectedIndex();
-  rotateCarousel();
-});
+if (nextButton) {
+  nextButton.addEventListener("click", function() {
+    selectedIndex++;
+    limitSelectedIndex();
+    rotateCarousel();
+  });
+}
 
 const limitSelectedIndex = () => {
   if (selectedIndex === 5) {
@@ -70,4 +74,20 @@ const addUpvote = () => {
 
 upvoteButtons.map(upvoteButton => {
   upvoteButton.addEventListener("click", () => addUpvote());
+});
+
+//back button
+
+const backButton = document.querySelector(".back-button");
+backButton.addEventListener("click", () => {
+  window.history.back();
+});
+
+// Burger menu animation
+
+const burgerButton = document.querySelector("#burgerMenuIcon");
+const burgerMenu = document.querySelector("#burgerMenu");
+
+burgerButton.addEventListener("click", () => {
+  burgerMenu.classList.toggle("visible");
 });
