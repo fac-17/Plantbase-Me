@@ -10,8 +10,7 @@
 
     <p>{{chosenProduct.product_description}}</p>
 
-    <form action="/submitrating" method="POST">
-        <input type="text" name="product_id" readonly value={{chosenProduct.id}}>
+    <form action="/submitrating/{{chosenProduct.id}}" method="POST">
         <label for="rating">Rating</label>
         <select id="rating" name="rating">
             <option value=1>1</option>
