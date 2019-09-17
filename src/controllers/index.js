@@ -9,6 +9,7 @@ const aboutUs = require("./aboutUs");
 const thanksForSubmission = require("./thanksForSubmission");
 const howToContibute = require("./howToContribute");
 const submitRating = require("./submitRating");
+const submitUpvote = require("./submitUpvote");
 const addProduct = require("./addProduct");
 const error = require("./error");
 
@@ -21,6 +22,7 @@ router.get("/thanksforsubmission", thanksForSubmission.get);
 router.get("/howtocontribute", howToContibute.get);
 router.post("/submitrating/:prodid", submitRating.post);
 router.post("/addproduct", addProduct.post);
+router.post("/upvote/:commentId", submitUpvote.post);
 
 router.use(error.client);
 router.use(error.server);
