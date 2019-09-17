@@ -1,11 +1,16 @@
 <section>
+    <h3>{{chosenProduct.product_name}}</h3>
+
     <img src={{chosenProduct.product_image}} />
+
+    <article class="result-rating">{{returnAverageRating ratings}}</article>
+
     <p>
         {{#each chosenProduct.where_to_buy}}
         {{this}},
         {{/each}}
     </p>
-    <h3>{{chosenProduct.product_name}}</h3>
+
     <p>Price: {{chosenProduct.product_price}}</p>
 
     <p>{{chosenProduct.product_description}}</p>
@@ -24,7 +29,6 @@
 
         <input type="submit">
     </form>
-    <article>{{returnAverageRating ratings}}</article>
     <section>
         {{#each ratings}}
         <article>
