@@ -50,6 +50,13 @@ upvoteButtons.map(upvoteButton => {
   upvoteButton.addEventListener("click", () => addUpvote());
 });
 
+//back button
+
+const backButton = document.querySelector(".back-button");
+backButton.addEventListener("click", () => {
+  window.history.back();
+});
+
 // Burger menu animation
 
 const burgerButton = document.querySelector("#burgerMenuIcon");
