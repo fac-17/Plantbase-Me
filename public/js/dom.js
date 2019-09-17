@@ -48,7 +48,7 @@ upvoteButtons.map(upvoteButton => {
 
 //back button
 
-var backButton = document.querySelector(".back-button");
-backButton.addEventListener("click", function() {
+const backButton = document.querySelector(".back-button");
+backButton.addEventListener("click", () => {
   window.history.back();
 });
