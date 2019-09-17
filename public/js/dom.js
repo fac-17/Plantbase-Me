@@ -41,6 +41,16 @@ const limitSelectedIndex = () => {
 
 // Pass selected category to the back-end
 
+const selectButton = document.querySelector(".select-button");
+
+if (selectButton) {
+  selectButton.addEventListener("click", () => {
+    selectedIndex++;
+    limitSelectedIndex();
+    location.assign(`/results/${selectedIndex}`);
+  });
+}
+
 // Upvote comments
 
 const upvoteButtons = Array.from(
