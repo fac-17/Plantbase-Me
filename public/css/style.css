@@ -188,16 +188,19 @@ body > section.nav-bar > div.nav-bar-content > svg:nth-child(2) {
   display: block;
 }
 
-.footer {
+.footer-container {
   display: flex;
   padding: 0em 2em;
   color: white;
   background-color: #184353;
-  /* bottom: 0;
-  width: 100%;
-  height: 60px;
-  text-align: center; */
+  height: 3em;
   flex-direction: horizontal;
   align-items: center;
   justify-content: space-between;
+  width: 100vw;
+}
+
+.footer {
+  position: sticky;
+  bottom: 0;
 }
