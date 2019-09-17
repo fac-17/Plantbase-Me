@@ -37,10 +37,11 @@ const upvoteButtons = Array.from(
 
 // fetch to send upvote to db
 
-const postUpvote = commentId => {
+const postUpvote = (commentId, upvotesNumber) => {
   console.log("posting upvote with comment id", commentId);
-  fetch(`/upvote`, {
+  fetch("/upvote", {
     method: "POST",
+    body: JSON.stringify({ commentId, upvotesNumber }),
     headers: { "Content-Type": "application/json" }
   })
     .then(function(data) {
@@ -56,12 +57,13 @@ const addUpvote = () => {
   const numberOfUpvotes = document.getElementById(`upvotes-${idNumber}`);
 
   const currentVotes = numberOfUpvotes.textContent;
-  numberOfUpvotes.textContent = Number(currentVotes) + 1;
+  const newUpvotes = Number(currentVotes) + 1;
+  numberOfUpvotes.textContent = newUpvotes;
 
   const upvoteButton = document.getElementById(event.target.id);
   upvoteButton.style.display = "none";
 
-  postUpvote(idNumber);
+  postUpvote(idNumber, newUpvotes);
 };
 
 if (upvoteButtons) {
