@@ -98,6 +98,12 @@ h2 {
   transform: rotateY(270deg) translateZ(175px);
 }
 
+.craving-svg-text {
+  font-size: 1.6em;
+  text-align: center;
+  padding: 0.5em;
+}
+
 .craving-svg {
   background: var(--white);
   box-shadow: 0px 0px 20px 0px #696969;
@@ -211,6 +217,7 @@ h2 {
   position: absolute;
   background-color: Transparent;
   border: none;
+  left: 0vw;
 }
 
 .next-button {
@@ -219,7 +226,7 @@ h2 {
   height: 5em;
   background-size: contain;
   position: absolute;
-  left: 80vw;
+right: 0;
   background-color: Transparent;
   border: none;
 }
