@@ -168,6 +168,7 @@ h2 {
     "image image description description"
     "image image description description"
     ". rating rating .";
+  cursor: pointer;
 }
 
 .result-title a {

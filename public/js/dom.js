@@ -109,13 +109,9 @@ backButton.addEventListener("click", () => {
 
 const burgerButton = document.querySelector("#burgerMenuIcon");
 const burgerMenu = document.querySelector("#burgerMenu");
-const burgerItemLinks = Array.from(
-  document.getElementsByClassName("burgerItemLink")
-);
 
 burgerButton.addEventListener("click", () => {
   burgerMenu.classList.toggle("visible");
-  burgerItemLinks.map(link => link.classList.toggle("visible"));
 });
 
 // display Stars
@@ -129,5 +125,18 @@ if (ratings) {
       stars += "⭐";
     }
     rating.textContent = stars;
+  });
+}
+
+// Allow all parts of recipe card to be clickable
+
+const resultCards = Array.from(document.getElementsByClassName("result-card"));
+const resultLinks = Array.from(document.getElementsByClassName("result-link"));
+
+if (resultCards) {
+  resultCards.forEach((item, index) => {
+    item.addEventListener("click", () => {
+      location.assign(resultLinks[index].href);
+    });
   });
 }
