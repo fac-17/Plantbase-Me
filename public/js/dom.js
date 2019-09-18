@@ -57,6 +57,7 @@ const limitSelectedIndex = () => {
 
 const selectButton = document.querySelector(".select-button");
 
+// resets index to a range that corresponds with a page
 const changeSelectedIndex = () => {
   if (selectedIndex < 4 && selectedIndex > 7) {
     selectedIndex = (selectedIndex % 4) + 1;
