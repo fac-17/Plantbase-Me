@@ -5,15 +5,15 @@
 
     <article class="result-rating">{{returnAverageRating ratings}}</article>
 
-    <p>
+    <p class="product-para">
         {{#each chosenProduct.where_to_buy}}
         {{this}},
         {{/each}}
     </p>
 
-    <p>Price: {{chosenProduct.product_price}}</p>
+    <p class="product-para">Price: {{chosenProduct.product_price}}</p>
 
-    <p>{{chosenProduct.product_description}}</p>
+    <p class="product-para">{{chosenProduct.product_description}}</p>
 
     <form action="/submitrating/{{chosenProduct.id}}" method="POST">
         <label for="rating">Rating</label>
@@ -31,7 +31,7 @@
     </form>
     <section>
         {{#each ratings}}
-        <article>
+        <article class="product-comment-card">
             <p>{{this.comment}}</p>
             <p>Rating: <span class="result-rating">{{this.rating}}</span></p><br>
             <p>UpVotes: <span id='upvotes-{{this.id}}'>{{this.votes}}</span></p>
