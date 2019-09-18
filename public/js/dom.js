@@ -12,25 +12,35 @@ var slideCount = 4;
 var selectedIndex = 4;
 
 function rotateCarousel() {
-  var angle = (selectedIndex / slideCount) * -360;
+  // if (sliderPressFlag === 0) {
+  //   contentSlider.style.transform = "translateZ(-256px) rotateY(360)";
+  // }
+  // weird next line is necessary because for whatever reason we're counting up from 4?
+  var angle = (selectedIndex / slideCount) * -360 + 360;
   contentSlider.style.transform =
     "translateZ(-256px) rotateY(" + angle + "deg)";
 }
+
+// var sliderPressFlag = 0;
 
 var prevButton = document.querySelector(".previous-button");
 if (prevButton) {
   prevButton.addEventListener("click", function() {
     selectedIndex--;
-    limitSelectedIndex();
+    // limitSelectedIndex();
     rotateCarousel();
   });
+  console.log("selectedIndex", selectedIndex);
+  console.log("slideCount", slideCount);
 }
 
 var nextButton = document.querySelector(".next-button");
 if (nextButton) {
   nextButton.addEventListener("click", function() {
     selectedIndex++;
-    limitSelectedIndex();
+    console.log("selectedIndex", selectedIndex);
+    console.log("slideCount", slideCount);
+    // limitSelectedIndex();
     rotateCarousel();
   });
 }
@@ -47,10 +57,18 @@ const limitSelectedIndex = () => {
 
 const selectButton = document.querySelector(".select-button");
 
+const changeSelectedIndex = () => {
+  if (selectedIndex < 4 && selectedIndex > 7) {
+    selectedIndex = (selectedIndex % 4) + 1;
+  }
+};
+
 if (selectButton) {
   selectButton.addEventListener("click", () => {
-    selectedIndex++;
-    limitSelectedIndex();
+    changeSelectedIndex();
+    console.log("selectedIndex2", selectedIndex);
+    // selectedIndex++;
+    // limitSelectedIndex();
     location.assign(`/results/${selectedIndex}`);
   });
 }
