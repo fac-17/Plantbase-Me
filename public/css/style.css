@@ -218,3 +218,10 @@ body > section.nav-bar > div.nav-bar-content > svg:nth-child(2) {
   margin: 30px;
   font-size: 1.5em;
 }
+
+.contribute {
+  text-align: center;
+  padding: 10px;
+  margin: 30px;
+  font-size: 1.5em;
+}
