@@ -172,6 +172,7 @@ h2 {
   position: absolute;
   background-color: Transparent;
   border: none;
+  left: 0vw;
 }
 
 .next-button {
@@ -180,7 +181,7 @@ h2 {
   height: 5em;
   background-size: contain;
   position: absolute;
-  left: 80vw;
+right: 0;
   background-color: Transparent;
   border: none;
 }
