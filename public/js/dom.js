@@ -109,9 +109,13 @@ backButton.addEventListener("click", () => {
 
 const burgerButton = document.querySelector("#burgerMenuIcon");
 const burgerMenu = document.querySelector("#burgerMenu");
+const burgerItemLinks = Array.from(
+  document.getElementsByClassName("burgerItemLink")
+);
 
 burgerButton.addEventListener("click", () => {
   burgerMenu.classList.toggle("visible");
+  burgerItemLinks.map(link => link.classList.toggle("visible"));
 });
 
 // display Stars
