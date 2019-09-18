@@ -113,3 +113,17 @@ const burgerMenu = document.querySelector("#burgerMenu");
 burgerButton.addEventListener("click", () => {
   burgerMenu.classList.toggle("visible");
 });
+
+// display Stars
+
+const ratings = Array.from(document.getElementsByClassName("result-rating"));
+if (ratings) {
+  ratings.map(rating => {
+    let number = rating.textContent;
+    let stars = "";
+    for (i = 1; i <= number; i++) {
+      stars += "⭐";
+    }
+    rating.textContent = stars;
+  });
+}
