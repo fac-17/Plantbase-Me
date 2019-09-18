@@ -6,6 +6,13 @@ logo.addEventListener("click", () => {
   location.assign("/");
 });
 
+const plantbaseMeText = document.querySelector(".plantbase-me-text");
+console.log(plantbaseMeText);
+
+plantbaseMeText.addEventListener("click", () => {
+  location.assign("/");
+});
+
 // slider on hp
 var contentSlider = document.querySelector(".content-slider");
 var slideCount = 4;
