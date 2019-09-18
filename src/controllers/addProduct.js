@@ -19,31 +19,18 @@ exports.post = (req, res) => {
     comment: comment
   };
 
-  let prodid = 0;
-
-  const postProductPromise = new Promise((resolve, reject) => {
-    postProduct(product);
-    resolve(getProductByName(product_name));
-    reject(new Error("Error"));
-  });
   // Post the product (currently working)
+  postProduct(product);
 
-  // Function ceases working here
+  console.log("prodnameafter18", product_name);
+
+  // Function ceases working here - getProductByName returns a promise
+  console.log(getProductByName(product_name));
 
   // Find product ID based upon the product's name
+  let prodid = getProductByName(product_name);
 
-  // postProductPromise.then(() => {
-  //   console.log("Get Product by Name before");
-  //   prodid = getProductByName(product_name);
-  //   console.log("Get Product by Name after");
-  // });
-
-  const onResolved = resolvedValue =>
-    postRatingComment(rating_comment, resolvedValue);
-
-  const onRejected = error => console.log(error);
   // Post the rating and comment
-  postProductPromise.then(onResolved, onRejected);
-
+  postRatingComment(rating_comment, prodid);
   res.redirect("/thanksforsubmission");
 };
