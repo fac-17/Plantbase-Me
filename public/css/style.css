@@ -143,6 +143,7 @@ body > section.nav-bar > div.nav-bar-content > svg:nth-child(2) {
 
 .result-rating {
   grid-area: rating;
+  text-align: center;
 }
 
 .result-card {
@@ -151,7 +152,7 @@ body > section.nav-bar > div.nav-bar-content > svg:nth-child(2) {
   box-shadow: 5px 5px 10px var(--grey);
   border-radius: 20px;
   display: grid;
-  grid-template-columns: 20vw 20vw 20vw 20vw;
+  grid-template-columns: 23vw 23vw 23vw 23vw;
   grid-template-rows: auto;
   grid-template-areas:
     "title title title title"
@@ -168,7 +169,8 @@ body > section.nav-bar > div.nav-bar-content > svg:nth-child(2) {
 }
 
 .result-description {
-  font-size: 1.2em;
+  font-size: 1.4em;
+  text-align: center;
 }
 
 .result-image {
