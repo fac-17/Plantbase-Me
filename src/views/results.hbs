@@ -1,11 +1,11 @@
 <section>
-    <h2 id="results-title">Choose a Product:</h2>
+    <h2 id="results-title">Choose a Product</h2>
 
     <section class="results-list">
 
         {{#each allProducts}}
         <article class="result-card">
-            <h3 class="result-title"><a href="/product/{{this.id}}">{{this.product_name}}</a></h3>
+            <h3 class="result-title"><a href="/product/{{this.id}}" class="result-link">{{this.product_name}}</a></h3>
             <img class="result-image" src="{{this.product_image}}" />
             <p class="result-description">{{this.product_description}}</p>
             <p class="result-rating">{{returnNearestInt this.product_avg_rating}}</p>
