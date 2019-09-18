@@ -36,10 +36,10 @@ if (nextButton) {
 }
 
 const limitSelectedIndex = () => {
-  if (selectedIndex === 5) {
+  if (selectedIndex > slideCount) {
     selectedIndex = 1;
   } else if (selectedIndex <= 0) {
-    selectedIndex = 4;
+    selectedIndex = slideCount;
   }
 };
 
