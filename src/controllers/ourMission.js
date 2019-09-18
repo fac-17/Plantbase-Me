@@ -1,3 +1,3 @@
 exports.get = (req, res) => {
-  res.render("ourmission");
+  res.render("ourMission");
 };
