@@ -185,6 +185,7 @@ h2 {
   border: none;
 }
 
+
 .button {
   background: var(--orangered);
   border-radius: 100px;
@@ -206,7 +207,7 @@ h2 {
 .button:active {
   -webkit-animation: active 1200ms ease 1 alternate;
   animation: active 1200ms ease 1 alternate; 
-  background: #5F9BE0;
+  background: var(--orangered);
 }
 .gray { background: #D2D2D2; }
 .gray:active { background: #b9b9b9; }
