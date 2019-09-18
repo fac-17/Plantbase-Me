@@ -437,14 +437,33 @@ keyframes active {
   text-align: center;
 }
 
+.product-rating{
+  grid-area: rating;
+}
+
+.product-comment{
+  grid-area: comment;
+}
+
+.product-upvotes{
+  grid-area: upvotes;
+}
+
+.upvote-button{
+  grid-area: button;
+}
+
 .product-comment-card {
   margin: 10px;
   padding: 10px;
   box-shadow: 5px 5px 10px var(--grey);
   border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 20vw 20vw 20vw 20vw;
+  grid-template-rows: auto;
+  grid-template-areas: ". rating rating ."
+  "comment comment comment upvotes"
+  "comment comment comment button"
 }
 
 .product-para {
