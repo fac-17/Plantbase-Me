@@ -157,7 +157,9 @@ h2 {
 
 /* back button*/
 
-.back-button {
+.back-button,
+#cravingID,
+#submitProductButton {
   background-color: #80a4b2;
 }
 
@@ -338,4 +340,50 @@ keyframes active {
   color: black;
   padding: 2em 4em;
   display: block;
+}
+
+.about-us {
+  text-align: center;
+  padding: 10px;
+  margin: 30px;
+  font-size: 1.5em;
+}
+
+.footer-container {
+  display: flex;
+  padding: 0em 2em;
+  color: white;
+  background-color: #184353;
+  height: 3em;
+  flex-direction: horizontal;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+}
+
+.footer {
+  position: sticky;
+  bottom: 0;
+}
+
+/* Add a Product Styles */
+
+#addAProductForm {
+  padding: 1em;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.mission {
+  text-align: center;
+  padding: 10px;
+  margin: 30px;
+  font-size: 1.5em;
+}
+
+.contribute {
+  text-align: center;
+  padding: 10px;
+  margin: 30px;
+  font-size: 1.5em;
 }
