@@ -127,3 +127,16 @@ if (ratings) {
     rating.textContent = stars;
   });
 }
+
+var scrollEventHandler = function() {
+  window.scroll(0, window.pageYOffset);
+};
+
+window.addEventListener("scroll", scrollEventHandler, false);
+
+var docWidth = document.documentElement.offsetWidth;
+[].forEach.call(document.querySelectorAll("*"), function(el) {
+  if (el.offsetWidth > docWidth) {
+    console.log(el);
+  }
+});

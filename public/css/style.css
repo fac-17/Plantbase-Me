@@ -146,13 +146,13 @@ body > section.nav-bar > div.nav-bar-content > svg:nth-child(2) {
   max-width: 300px;
 }
 
-/* back button*/
+/* ------------ back button ------------ */
 
 .back-button {
   background-color: #80a4b2;
 }
 
-/* Burger Menu */
+/* ------------ Burger Menu ------------ */
 
 #burgerMenu {
   background: var(--lightblue);
@@ -162,11 +162,13 @@ body > section.nav-bar > div.nav-bar-content > svg:nth-child(2) {
   right: 0;
   z-index: 1;
   transform: translateX(100%);
-  transition: all 0.5s ease;
+  transition: transform 0.5s ease;
+  display: none;
 }
 
 #burgerMenu.visible {
   transform: translateX(0);
+  display: block;
 }
 
 #burgerList {
@@ -186,6 +188,13 @@ body > section.nav-bar > div.nav-bar-content > svg:nth-child(2) {
   color: black;
   padding: 2em 4em;
   display: block;
+}
+
+/* ------------ Product Page ------------ */
+
+.product-page-image {
+  max-height: 300px;
+  max-width: 300px;
 }
 
 .about-us {
