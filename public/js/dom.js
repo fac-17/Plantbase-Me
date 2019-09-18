@@ -55,6 +55,19 @@ if (selectButton) {
   });
 }
 
+// Forward user if slider image was clicked
+
+const selectedSlide = document.querySelector(".content-slider");
+console.log(selectedSlide);
+
+if (selectedSlide) {
+  selectedSlide.addEventListener("click", () => {
+    selectedIndex++;
+    limitSelectedIndex();
+    location.assign(`/results/${selectedIndex}`);
+  });
+}
+
 // Upvote comments
 
 const upvoteButtons = Array.from(
