@@ -360,14 +360,15 @@ keyframes active {
 
 #burgerMenu {
   background: var(--lightblue);
-  text-align: right;
+  text-align: center;
   position: absolute;
-  top: 12vh;
+  top: 10vh;
   right: 0;
   z-index: 1;
   transform: translateX(100%);
   transition: all 0.5s ease;
-  width: 0;
+  width: 200px;
+  overflow-x: hidden
 }
 
 #burgerMenu.visible {
