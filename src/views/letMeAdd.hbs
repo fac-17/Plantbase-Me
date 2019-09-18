@@ -1,12 +1,13 @@
-<section id="#addAProductForm">
+<section id="addAProductForm">
+    <h2> Add a Product</h2>
     <form action="/addProduct" method="POST">
-        <label for="productName">Product Name: </label>
+        <label for="productName">Product Name: </label><br>
         <input id="productName" name="product_name"><br>
 
-        <label for="productDescription">Product Description: </label>
+        <label for="productDescription">Product Description: </label><br>
         <input id="productDescription" name="product_description"><br>
 
-        <label for="cravingID">Choose a craving: </label>
+        <label for="cravingID">Choose a craving: </label><br>
         <select id="cravingID" name="craving_id">
             <option value=1>Cheese</option>
             <option value=2>Meat</option>
@@ -14,15 +15,15 @@
             <option value=4>Sweet</option>
         </select><br>
 
-        <label for="whereToBuy">Where can you buy this?</label>
+        <label for="whereToBuy">Where can you buy this?</label><br>
         <input id="whereToBuy" name="where_to_buy"><br>
 
-        <label for="productImage">Product Image URL: </label>
+        <label for="productImage">Product Image URL: </label><br>
         <input id="productImage" name="product_image"><br>
 
-        <label for="price">Product Price</label>
+        <label for="price">Product Price</label><br>
         <input type="number" step="0.01" min="0.01" id="price" name="product_price"><br>
 
-        <input type="submit">
+        <input id="submitProductButton" type="submit">
     </form>
 </section>
