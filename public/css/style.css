@@ -155,6 +155,12 @@ h2 {
   max-width: 300px;
 }
 
+.result-rating {
+  align-items: center;
+  font-weight: bold;
+}
+
+
 /* ------------ back button ------------ */
 
 .back-button,
@@ -378,6 +384,31 @@ keyframes active {
 .footer {
   position: sticky;
   bottom: 0;
+}
+
+/* Product page */
+
+#product-title {
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+.product-page {
+  text-align: center;
+}
+
+.product-comment-card {
+  margin: 10px;
+  padding: 10px;
+  box-shadow: 5px 5px 10px var(--grey);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-para {
+  font-weight: bold;
 }
 
 /* Add a Product Styles */

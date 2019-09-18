@@ -125,7 +125,7 @@ if (ratings) {
   ratings.map(rating => {
     let number = rating.textContent;
     let stars = "";
-    for (i = 1; i <= number; i++) {
+    for (let i = 1; i <= number; i++) {
       stars += "⭐";
     }
     rating.textContent = stars;
