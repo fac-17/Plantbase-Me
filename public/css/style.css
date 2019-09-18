@@ -10,6 +10,9 @@
 
 body {
   font-family: "Dosis", sans-serif;
+  position: relative;
+  min-height: 100vh;
+
 }
 
 body > section.nav-bar > div.nav-bar-content > svg:nth-child(2) {
@@ -239,7 +242,7 @@ right: 0;
   color: #fff;
   text-decoration: none;
   font-size: 1.45em;
-  margin: auto;
+  margin: 20px auto;
   width: 50vw;
 }
 
@@ -357,14 +360,15 @@ keyframes active {
 
 #burgerMenu {
   background: var(--lightblue);
-  text-align: right;
+  text-align: center;
   position: absolute;
-  top: 12vh;
+  top: 10vh;
   right: 0;
   z-index: 1;
   transform: translateX(100%);
   transition: all 0.5s ease;
-  width: 0;
+  width: 200px;
+  overflow-x: hidden
 }
 
 #burgerMenu.visible {
@@ -419,11 +423,13 @@ keyframes active {
   align-items: center;
   justify-content: space-between;
   width: 100vw;
+  position: absolute;
+  
 }
 
 .footer {
-  position: sticky;
-  bottom: 0;
+ bottom: 0;
+ position: absolute;
 }
 
 /* Product page */
