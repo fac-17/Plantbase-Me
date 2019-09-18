@@ -221,3 +221,17 @@ body > section.nav-bar > div.nav-bar-content > svg:nth-child(2) {
   font-size: 1.5em;
   text-align: center;
 }
+
+.mission {
+  text-align: center;
+  padding: 10px;
+  margin: 30px;
+  font-size: 1.5em;
+}
+
+.contribute {
+  text-align: center;
+  padding: 10px;
+  margin: 30px;
+  font-size: 1.5em;
+}
