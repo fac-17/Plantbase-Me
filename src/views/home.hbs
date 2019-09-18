@@ -3,18 +3,18 @@
         What are you looking for?
     </section>
 
-    {{!-- <section class="selection-slider"> --}}
-    <div class="content">
-        <div class="content-slider">
-            {{#each cravings}}
-            <figure class="craving-svg">
-                <image src="/assets/{{this.craving_name}}.png" />
-            </figure>
-            {{/each}}
+    <section class="selection-slider">
+        <div class="content">
+            <div class="content-slider">
+                {{#each cravings}}
+                <figure class="craving-svg">
+                    <image src="/assets/{{this.craving_name}}.png" />
+                </figure>
+                {{/each}}
+            </div>
         </div>
-    </div>
-    </div>
-    {{!-- </section> --}}
+        </div>
+    </section>
 
     <p style="text-align: center;">
         <button class="previous-button">Previous</button>
