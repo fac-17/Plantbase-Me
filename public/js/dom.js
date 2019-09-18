@@ -70,7 +70,7 @@ if (selectButton) {
     console.log("selectedIndex2", selectedIndex);
     // selectedIndex++;
     // limitSelectedIndex();
-    location.assign(`/results/${selectedIndex}`);
+    location.assign(`/results/${selectedIndex - 3}`);
   });
 }
 
