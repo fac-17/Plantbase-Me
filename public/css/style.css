@@ -146,6 +146,20 @@ body > section.nav-bar > div.nav-bar-content > svg:nth-child(2) {
   max-width: 300px;
 }
 
+.result-rating {
+  align-items: center;
+  font-weight: bold;
+}
+
+#product-title {
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+.product-page {
+  text-align: center;
+}
+
 /* back button*/
 
 .back-button {
