@@ -161,7 +161,7 @@ h2 {
   background-color: #80a4b2;
 }
 
-.previous {
+.previous-button {
   background-image: url(../assets/back.png);
   width: 5em;
   height: 5em;
@@ -172,7 +172,7 @@ h2 {
   border: none;
 }
 
-.next {
+.next-button {
   background-image: url(../assets/next.png);
   width: 5em;
   height: 5em;
@@ -184,13 +184,14 @@ h2 {
 }
 
 .button {
-  background: #76B3FA;
+  background: var(--orangered);
   border-radius: 100px;
-  padding: 20px 60px;
+  padding: 10px 30px;
   color: #fff;
   text-decoration: none;
   font-size: 1.45em;
-  margin: 0 15px;
+  margin: auto;
+  width: 50vw;
 }
 
 /* Hover state animation applied here */
