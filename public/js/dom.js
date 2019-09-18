@@ -109,9 +109,13 @@ backButton.addEventListener("click", () => {
 
 const burgerButton = document.querySelector("#burgerMenuIcon");
 const burgerMenu = document.querySelector("#burgerMenu");
+const burgerItemLinks = Array.from(
+  document.getElementsByClassName("burgerItemLink")
+);
 
 burgerButton.addEventListener("click", () => {
   burgerMenu.classList.toggle("visible");
+  burgerItemLinks.map(link => link.classList.toggle("visible"));
 });
 
 // display Stars
@@ -127,16 +131,3 @@ if (ratings) {
     rating.textContent = stars;
   });
 }
-
-var scrollEventHandler = function() {
-  window.scroll(0, window.pageYOffset);
-};
-
-window.addEventListener("scroll", scrollEventHandler, false);
-
-var docWidth = document.documentElement.offsetWidth;
-[].forEach.call(document.querySelectorAll("*"), function(el) {
-  if (el.offsetWidth > docWidth) {
-    console.log(el);
-  }
-});

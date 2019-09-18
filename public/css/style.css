@@ -162,13 +162,13 @@ body > section.nav-bar > div.nav-bar-content > svg:nth-child(2) {
   right: 0;
   z-index: 1;
   transform: translateX(100%);
-  transition: transform 0.5s ease;
-  display: none;
+  transition: all 0.5s ease;
+  width: 0;
 }
 
 #burgerMenu.visible {
+  width: 200px;
   transform: translateX(0);
-  display: block;
 }
 
 #burgerList {
@@ -183,7 +183,11 @@ body > section.nav-bar > div.nav-bar-content > svg:nth-child(2) {
   border-left-style: none;
 }
 
-.burgerItem > a {
+.burgerItemLink {
+  display: none;
+}
+
+.burgerItemLink.visible {
   text-decoration: none;
   color: black;
   padding: 2em 4em;
