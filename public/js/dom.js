@@ -125,9 +125,22 @@ if (ratings) {
   ratings.map(rating => {
     let number = rating.textContent;
     let stars = "";
-    for (i = 1; i <= number; i++) {
+    for (let i = 1; i <= number; i++) {
       stars += "⭐";
     }
     rating.textContent = stars;
+  });
+}
+
+// Allow all parts of recipe card to be clickable
+
+const resultCards = Array.from(document.getElementsByClassName("result-card"));
+const resultLinks = Array.from(document.getElementsByClassName("result-link"));
+
+if (resultCards) {
+  resultCards.forEach((item, index) => {
+    item.addEventListener("click", () => {
+      location.assign(resultLinks[index].href);
+    });
   });
 }
