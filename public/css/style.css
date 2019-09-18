@@ -188,6 +188,13 @@ body > section.nav-bar > div.nav-bar-content > svg:nth-child(2) {
   display: block;
 }
 
+.about-us {
+  text-align: center;
+  padding: 10px;
+  margin: 30px;
+  font-size: 1.5em;
+}
+
 .footer-container {
   display: flex;
   padding: 0em 2em;
