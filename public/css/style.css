@@ -146,7 +146,7 @@ body > section.nav-bar > div.nav-bar-content > svg:nth-child(2) {
   max-width: 300px;
 }
 
-/* back button*/
+/* ------------ back button ------------ */
 
 .back-button,
 #cravingID,
@@ -154,7 +154,7 @@ body > section.nav-bar > div.nav-bar-content > svg:nth-child(2) {
   background-color: #80a4b2;
 }
 
-/* Burger Menu */
+/* ------------ Burger Menu ------------ */
 
 #burgerMenu {
   background: var(--lightblue);
@@ -165,9 +165,11 @@ body > section.nav-bar > div.nav-bar-content > svg:nth-child(2) {
   z-index: 1;
   transform: translateX(100%);
   transition: all 0.5s ease;
+  width: 0;
 }
 
 #burgerMenu.visible {
+  width: 200px;
   transform: translateX(0);
 }
 
@@ -183,11 +185,22 @@ body > section.nav-bar > div.nav-bar-content > svg:nth-child(2) {
   border-left-style: none;
 }
 
-.burgerItem > a {
+.burgerItemLink {
+  display: none;
+}
+
+.burgerItemLink.visible {
   text-decoration: none;
   color: black;
   padding: 2em 4em;
   display: block;
+}
+
+/* ------------ Product Page ------------ */
+
+.product-page-image {
+  max-height: 300px;
+  max-width: 300px;
 }
 
 .about-us {
