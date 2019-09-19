@@ -45,100 +45,7 @@ body > section.nav-bar > div.nav-bar-content > svg:nth-child(2) {
   border-top: 8vw solid var(--lightblue);
 }
 
-/* content slider below */
-.homepage {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
 
-h2 {
-  margin: auto;
-  margin-top: 2em;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-.content {
-  /* scene */
-  margin: auto;
-  width: 350px;
-  height: 350px;
-  perspective: 1000px;
-  position: relative;
-  padding-top: 20px;
-}
-
-.content-slider {
-  /* carousel */
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  transform: translateZ(-288px);
-  transform-style: preserve-3d;
-  transition: transform 1s;
-}
-
-.content-slider:hover {
-  cursor: pointer;
-}
-
-.content-slider figure:nth-child(1) {
-  transform: rotateY(0deg) translateZ(175px);
-}
-
-.content-slider figure:nth-child(2) {
-  transform: rotateY(90deg) translateZ(175px);
-}
-
-.content-slider figure:nth-child(3) {
-  transform: rotateY(180deg) translateZ(175px);
-}
-
-.content-slider figure:nth-child(4) {
-  transform: rotateY(270deg) translateZ(175px);
-}
-
-.craving-svg-text {
-  font-size: 1.6em;
-  text-align: center;
-  padding: 0.5em;
-}
-
-.craving-svg {
-  background: var(--white);
-  box-shadow: 0px 0px 20px 0px #696969;
-  border-radius: 2px;
-  width: 250px;
-  height: 250px;
-  left: 10px;
-  top: 10px;
-  border: 2px solid white;
-  position: absolute;
-}
-
-.content-slider img {
-  image-rendering: auto;
-  transition: all 300ms;
-  width: 100%;
-  height: 100%;
-}
-
-.content-slider img:hover {
-  transform: scale(1.2);
-  transition: all 300ms;
-}
-
-/* @keyframes rotar {
-  from {
-    transform: rotateY(0deg);
-  }
-  to {
-    transform: rotateY(360deg);
-  }
-} */
 
 /* Results page  */
 
@@ -248,7 +155,7 @@ right: 0;
 }
 
 /* Hover state animation applied here */
-.button:hover { 
+.button:hover {
   -webkit-animation: hover 1200ms linear 2 alternate;
   animation: hover 1200ms linear 2 alternate;
 }
@@ -256,7 +163,7 @@ right: 0;
 /* Active state animation applied here */
 .button:active {
   -webkit-animation: active 1200ms ease 1 alternate;
-  animation: active 1200ms ease 1 alternate; 
+  animation: active 1200ms ease 1 alternate;
   background: var(--orangered);
 }
 .gray { background: #D2D2D2; }
@@ -264,13 +171,13 @@ right: 0;
 
 /* Active state animation keyframes below */
 
-@-webkit-keyframes active { 
+@-webkit-keyframes active {
   0% {transform: scale(1,1);}
   90% {transform: scale(.9,.88);}
   100% {transform: scale(.92,.9);}
 }
 
-keyframes active { 
+keyframes active {
   0% {transform: scale(1,1);}
   90% {transform: scale(.9,.88);}
   100% {transform: scale(.92,.9);}
@@ -278,7 +185,7 @@ keyframes active {
 
 /* Hover state animation keyframes below */
 
-@-webkit-keyframes hover { 
+@-webkit-keyframes hover {
   0% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
   1.8% { -webkit-transform: matrix3d(1.016, 0, 0, 0, 0, 1.037, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1.016, 0, 0, 0, 0, 1.037, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
   3.5% { -webkit-transform: matrix3d(1.033, 0, 0, 0, 0, 1.094, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1.033, 0, 0, 0, 0, 1.094, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
@@ -314,10 +221,10 @@ keyframes active {
   85.49% { -webkit-transform: matrix3d(1.1, 0, 0, 0, 0, 1.1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1.1, 0, 0, 0, 0, 1.1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
   88.59% { -webkit-transform: matrix3d(1.1, 0, 0, 0, 0, 1.1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1.1, 0, 0, 0, 0, 1.1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
   96% { -webkit-transform: matrix3d(1.1, 0, 0, 0, 0, 1.1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1.1, 0, 0, 0, 0, 1.1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
-  100% { -webkit-transform: matrix3d(1.1, 0, 0, 0, 0, 1.1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1.1, 0, 0, 0, 0, 1.1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); } 
+  100% { -webkit-transform: matrix3d(1.1, 0, 0, 0, 0, 1.1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1.1, 0, 0, 0, 0, 1.1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
 }
 
-@keyframes hover { 
+@keyframes hover {
   0% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
   1.8% { -webkit-transform: matrix3d(1.016, 0, 0, 0, 0, 1.037, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1.016, 0, 0, 0, 0, 1.037, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
   3.5% { -webkit-transform: matrix3d(1.033, 0, 0, 0, 0, 1.094, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1.033, 0, 0, 0, 0, 1.094, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
@@ -353,7 +260,7 @@ keyframes active {
   85.49% { -webkit-transform: matrix3d(1.1, 0, 0, 0, 0, 1.1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1.1, 0, 0, 0, 0, 1.1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
   88.59% { -webkit-transform: matrix3d(1.1, 0, 0, 0, 0, 1.1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1.1, 0, 0, 0, 0, 1.1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
   96% { -webkit-transform: matrix3d(1.1, 0, 0, 0, 0, 1.1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1.1, 0, 0, 0, 0, 1.1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
-  100% { -webkit-transform: matrix3d(1.1, 0, 0, 0, 0, 1.1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1.1, 0, 0, 0, 0, 1.1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); } 
+  100% { -webkit-transform: matrix3d(1.1, 0, 0, 0, 0, 1.1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1.1, 0, 0, 0, 0, 1.1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
 }
 
 
@@ -425,7 +332,7 @@ keyframes active {
   justify-content: space-between;
   width: 100vw;
   position: absolute;
-  
+
 }
 
 .footer {
@@ -461,7 +368,7 @@ keyframes active {
   width: 5vw;
   height: 5vw;
   font-size: 1.8em;
-  
+
 }
 
 .product-comment-card {
