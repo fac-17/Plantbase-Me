@@ -178,6 +178,7 @@ h2 {
     "image image description description"
     ". rating rating .";
   cursor: pointer;
+  align-items: center;
 }
 
 .result-title a {
