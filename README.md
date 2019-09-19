@@ -91,4 +91,5 @@ You can use:
 
 ## Our initial design
 
-![]()
+![Figma Design Board](https://www.figma.com/file/OFOCFI5zOY4wOEgZMCRlUZ/Plantbase-Me?node-id=0%3A1)
+
