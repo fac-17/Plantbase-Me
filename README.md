@@ -4,6 +4,18 @@
 
 Help save all the animals, one recipe at a time.
 
+---
+
+## Team
+
+- Emmanuel (Scrum Master / Scrummy Mummy)
+- Christine (Quality Assurance)
+- Colette (UX/UI)
+- Sam (DevOps)
+- Gregor (DevOps)
+
+---
+
 ## Project idea
 
 Our app idea lets a user search for a non-vegan dish that they might be craving, and shows them a good alternative. We hope that this will make it easier for people to make a few changes here and there. We may also include some information about why this will help the environment, but we want to avoid shaming or alienating anyone.
@@ -92,14 +104,13 @@ The idea is to encourage more people to cut out some animal products, with a foc
 * Get started button
 
 * Footer
-  - Terms & Conditions
-  - Privacy Policy
 
 2. Selection Page
 
 - Header (Title, Logo, Burger)
 - 4 Initial Products (Cheese, Milk, Meat, Sweets)
 - Select button underneath Products
+- Footer
 
 3. Results page includes: #
 
@@ -108,6 +119,7 @@ The idea is to encourage more people to cut out some animal products, with a foc
    - A list of products
    - Product with title, image, rating, top comment
    - Clicking on a product will take you to the product's page
+   - Footer
 
 4. Product page includes: #
 
@@ -126,7 +138,7 @@ The idea is to encourage more people to cut out some animal products, with a foc
    - Header (Title, Logo, Burger)
    - Back arrow (to return to previous page)
    - Short mission statement
-   - Image
+   - Footer
 
 6. How to contribute
 
@@ -135,6 +147,7 @@ The idea is to encourage more people to cut out some animal products, with a foc
    - Short step-by-step description
    - Icons for each step
    - A short description of the nature of contributions
+   - Footer
 
 7. Add a Product
    - Header (Title, Logo, Burger)
@@ -148,22 +161,26 @@ The idea is to encourage more people to cut out some animal products, with a foc
      - Nutritional Information (if known)
      - Purchase links of where to buy
      - Submit button
+   - Footer
 8. Thanks for Submission
 
    - Header (Title, Logo, Burger)
    - Back arrow (to return to previous page)
    - Brief Thank you for submission message
+   - Footer
 
 9. Error Page (404)
 
    - Header (Title, Logo, Burger)
    - Back arrow (to return to previous page)
    - 404 Error Image and text
+   - Footer
 
 10. Error Page (505)
     - Header (Title, Logo, Burger)
     - Back arrow (to return to previous page)
     - 505 Error Image and text
+    - Footer
 
 ---
 
@@ -229,7 +246,7 @@ The idea is to encourage more people to cut out some animal products, with a foc
   - Tests on all routes
   - Tests on queries
 
-## What we learnt
+## What we learnt - Stuck and [sometimes] Unstuck
 
 ### Topic: Server set up
 
@@ -267,3 +284,9 @@ You can use:
 ## Create a test DB
 
 ![](https://i.imgur.com/yWWagb2.png)
+
+## Testing a post request
+
+- How can we test a post request?
+- Can we use a get request after?
+- We had a problem with promises
