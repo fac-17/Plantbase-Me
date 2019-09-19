@@ -1,14 +1,11 @@
 // Redirect to homepage when logo clicked
 
 const logo = document.getElementById("logo");
-
 logo.addEventListener("click", () => {
   location.assign("/");
 });
 
 const plantbaseMeText = document.querySelector(".plantbase-me-text");
-console.log(plantbaseMeText);
-
 plantbaseMeText.addEventListener("click", () => {
   location.assign("/");
 });
