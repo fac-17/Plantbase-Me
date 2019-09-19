@@ -1,6 +1,6 @@
 ![A Perfect Day For Bananafish, by J. D. Salinger](https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1447411550l/27819869.jpg)
 
-# Plantbase-Me
+# Plantbase-Me 🌱
 
 Help save all the animals, one recipe at a time.
 
