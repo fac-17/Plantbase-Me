@@ -20,17 +20,29 @@ exports.post = (req, res) => {
   };
 
   // Post the product (currently working)
-  postProduct(product);
+  new Promise((resolve, reject) => {
+    postProduct(product);
+    resolve();
+  })
+    .then(() => {
+      console.log("product name in promise", product_name);
+      return getProductByName(product_name);
+    })
+    .then(result => {
+      let prodId = result;
+      console.log(prodId);
+      return prodId;
+    });
 
-  console.log("prodnameafter18", product_name);
+  // console.log("prodnameafter18", product_name);
 
-  // Function ceases working here - getProductByName returns a promise
-  console.log(getProductByName(product_name));
+  // // Function ceases working here - getProductByName returns a promise
+  // console.log(getProductByName(product_name));
 
-  // Find product ID based upon the product's name
-  let prodid = getProductByName(product_name);
+  // // Find product ID based upon the product's name
+  // let prodid = getProductByName(product_name);
 
-  // Post the rating and comment
-  postRatingComment(rating_comment, prodid);
-  res.redirect("/thanksforsubmission");
+  // // Post the rating and comment
+  // postRatingComment(rating_comment, prodid);
+  // res.redirect("/thanksforsubmission");
 };
