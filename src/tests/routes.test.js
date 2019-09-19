@@ -32,7 +32,7 @@ test("Error loads up correctly for 404", t => {
 
 test("Results Page gives correct content type and 200 status", t => {
   request(app)
-    .get("/results")
+    .get("/results/3")
     .end((err, res) => {
       t.equal(
         res.headers["content-type"],
