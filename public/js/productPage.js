@@ -11,13 +11,7 @@ const postUpvote = (commentId, upvotesNumber) => {
     method: "POST",
     body: JSON.stringify({ commentId, upvotesNumber }),
     headers: { "Content-Type": "application/json" }
-  })
-    .then(function(data) {
-      console.log("Request success: ", data);
-    })
-    .catch(function(error) {
-      console.log("Request failure: ", error);
-    });
+  });
 };
 
 const addUpvote = () => {
@@ -34,8 +28,6 @@ const addUpvote = () => {
   postUpvote(idNumber, newUpvotes);
 };
 
-// if (upvoteButtons) {
 upvoteButtons.map(upvoteButton => {
   upvoteButton.addEventListener("click", () => addUpvote());
 });
-// }
