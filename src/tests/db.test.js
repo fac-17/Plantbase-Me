@@ -35,3 +35,16 @@ test("Check results are correct from getCravings query", t => {
     t.end();
   });
 });
+
+test("Check results are correct from getProductsByID query", t => {
+  const expected = "Violife Original Grated";
+
+  queries.getProductById(1).then(product => {
+    t.deepEqual(
+      product[0].product_name,
+      expected,
+      "Correct product is returned"
+    );
+    t.end();
+  });
+});
