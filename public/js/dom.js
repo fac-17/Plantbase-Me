@@ -6,6 +6,13 @@ logo.addEventListener("click", () => {
   location.assign("/");
 });
 
+const plantbaseMeText = document.querySelector(".plantbase-me-text");
+console.log(plantbaseMeText);
+
+plantbaseMeText.addEventListener("click", () => {
+  location.assign("/");
+});
+
 // slider on hp
 var contentSlider = document.querySelector(".content-slider");
 var slideCount = 4;
@@ -49,6 +56,19 @@ const selectButton = document.querySelector(".select-button");
 
 if (selectButton) {
   selectButton.addEventListener("click", () => {
+    selectedIndex++;
+    limitSelectedIndex();
+    location.assign(`/results/${selectedIndex}`);
+  });
+}
+
+// Forward user if slider image was clicked
+
+const selectedSlide = document.querySelector(".content-slider");
+console.log(selectedSlide);
+
+if (selectedSlide) {
+  selectedSlide.addEventListener("click", () => {
     selectedIndex++;
     limitSelectedIndex();
     location.assign(`/results/${selectedIndex}`);
@@ -109,7 +129,38 @@ backButton.addEventListener("click", () => {
 
 const burgerButton = document.querySelector("#burgerMenuIcon");
 const burgerMenu = document.querySelector("#burgerMenu");
+const burgerItemLinks = Array.from(
+  document.getElementsByClassName("burgerItemLink")
+);
 
 burgerButton.addEventListener("click", () => {
   burgerMenu.classList.toggle("visible");
+  burgerItemLinks.map(link => link.classList.toggle("visible"));
 });
+
+// display Stars
+
+const ratings = Array.from(document.getElementsByClassName("result-rating"));
+if (ratings) {
+  ratings.map(rating => {
+    let number = rating.textContent;
+    let stars = "";
+    for (let i = 1; i <= number; i++) {
+      stars += "⭐";
+    }
+    rating.textContent = stars;
+  });
+}
+
+// Allow all parts of recipe card to be clickable
+
+const resultCards = Array.from(document.getElementsByClassName("result-card"));
+const resultLinks = Array.from(document.getElementsByClassName("result-link"));
+
+if (resultCards) {
+  resultCards.forEach((item, index) => {
+    item.addEventListener("click", () => {
+      location.assign(resultLinks[index].href);
+    });
+  });
+}
