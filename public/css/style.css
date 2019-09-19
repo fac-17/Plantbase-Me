@@ -8,6 +8,8 @@
   --purple: #1e1732;
 }
 
+
+
 body {
   font-family: "Dosis", sans-serif;
   position: relative;
@@ -61,7 +63,7 @@ body > section.nav-bar > div.nav-bar-content > svg:nth-child(2) {
   transform: translateX(100%);
   transition: all 0.5s ease;
   width: 200px;
-  overflow-x: hidden
+  overflow-x: hidden;
 }
 
 #burger-menu.visible {
@@ -113,7 +115,7 @@ body > section.nav-bar > div.nav-bar-content > svg:nth-child(2) {
 
 .footer-container {
   display: flex;
-  padding: 0em 2em;
+  padding: 0;
   color: white;
   background-color: #184353;
   height: 3em;
@@ -122,11 +124,11 @@ body > section.nav-bar > div.nav-bar-content > svg:nth-child(2) {
   justify-content: space-between;
   width: 100vw;
   position: absolute;
-
+  
 }
 
 .footer {
- bottom: 0;
+ bottom: 3em;
  position: absolute;
 }
 
