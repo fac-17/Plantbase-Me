@@ -40,11 +40,7 @@ test("Check results are correct from getProductsByID query", t => {
   const expected = "Violife Original Grated";
 
   queries.getProductById(1).then(product => {
-    t.deepEqual(
-      product[0].product_name,
-      expected,
-      "Correct product is returned"
-    );
+    t.equal(product[0].product_name, expected, "Correct product is returned");
     t.end();
   });
 });
@@ -53,8 +49,17 @@ test("Check results are correct from getProductsByCraving query", t => {
   const expected = [11, 12];
 
   queries.getProductsByCraving(2).then(product => {
-    t.deepEqual(product[0].id, expected[0], "Correct product is returned");
-    t.deepEqual(product[4].id, expected[1], "Correct product is returned");
+    t.equal(product[0].id, expected[0], "Correct product is returned");
+    t.equal(product[4].id, expected[1], "Correct product is returned");
+    t.end();
+  });
+});
+
+test("Check results are correct from getRatingsByProduct query", t => {
+  const expected = 5;
+
+  queries.getRatingsByProduct(2).then(ratings => {
+    t.equal(ratings[0].id, expected, "Correct ratings are returned");
     t.end();
   });
 });
