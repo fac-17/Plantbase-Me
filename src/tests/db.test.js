@@ -48,3 +48,13 @@ test("Check results are correct from getProductsByID query", t => {
     t.end();
   });
 });
+
+test("Check results are correct from getProductsByCraving query", t => {
+  const expected = [11, 12];
+
+  queries.getProductsByCraving(2).then(product => {
+    t.deepEqual(product[0].id, expected[0], "Correct product is returned");
+    t.deepEqual(product[4].id, expected[1], "Correct product is returned");
+    t.end();
+  });
+});
