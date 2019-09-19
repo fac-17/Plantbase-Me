@@ -6,6 +6,13 @@ logo.addEventListener("click", () => {
   location.assign("/");
 });
 
+const plantbaseMeText = document.querySelector(".plantbase-me-text");
+console.log(plantbaseMeText);
+
+plantbaseMeText.addEventListener("click", () => {
+  location.assign("/");
+});
+
 // slider on hp
 var contentSlider = document.querySelector(".content-slider");
 var slideCount = 4;
@@ -49,6 +56,19 @@ const selectButton = document.querySelector(".select-button");
 
 if (selectButton) {
   selectButton.addEventListener("click", () => {
+    selectedIndex++;
+    limitSelectedIndex();
+    location.assign(`/results/${selectedIndex}`);
+  });
+}
+
+// Forward user if slider image was clicked
+
+const selectedSlide = document.querySelector(".content-slider");
+console.log(selectedSlide);
+
+if (selectedSlide) {
+  selectedSlide.addEventListener("click", () => {
     selectedIndex++;
     limitSelectedIndex();
     location.assign(`/results/${selectedIndex}`);
