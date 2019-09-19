@@ -451,20 +451,27 @@ keyframes active {
 
 .upvote-button{
   grid-area: button;
+  width: 5vw;
+  height: 5vw;
+  font-size: 1.8em;
+  
 }
 
 .product-comment-card {
   margin: 10px;
   padding: 10px;
-  box-shadow: 5px 5px 10px var(--grey);
+  box-shadow: 0.5em 0.5em 1em var(--purple);
   border-radius: 20px;
   display: grid;
   grid-template-columns: 20vw 20vw 20vw 20vw;
   grid-template-rows: auto;
-  grid-template-areas: ". rating rating ."
-  "comment comment comment upvotes"
-  "comment comment comment button"
+  grid-template-areas: ". rating . upvotes"
+  "comment comment comment  ."
+  "comment comment comment button";
+  justify-items: center;
 }
+
+
 
 .product-para {
   font-weight: bold;
