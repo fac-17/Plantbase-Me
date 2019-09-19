@@ -62,7 +62,22 @@ test("Product Page gives correct content type for item 1 and status 200", t => {
 
 test("About us Page gives correct content type and status 200", t => {
   request(app)
-    .get("aboutus")
+    .get("/aboutus")
+    .end((err, res) => {
+      t.equal(
+        res.headers["content-type"],
+        "text/html; charset=utf-8",
+        "Content type is HTML"
+      );
+      t.equal(res.status, 200, "Status code is 200");
+      t.error(err, "There is no error");
+      t.end();
+    });
+});
+
+test("Thanks for Submission Page gives correct content type and status 200", t => {
+  request(app)
+    .get("/thanksforsubmission")
     .end((err, res) => {
       t.equal(
         res.headers["content-type"],
