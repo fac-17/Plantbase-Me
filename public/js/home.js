@@ -26,7 +26,7 @@ const limitSelectedIndex = () => {
   if (cravingSelectedIndex > numOfSlides) {
     cravingSelectedIndex = 1;
   } else if (cravingSelectedIndex <= 0) {
-    cravingSelectedIndex = 4;
+    cravingSelectedIndex = numOfSlides;
   }
 };
 
