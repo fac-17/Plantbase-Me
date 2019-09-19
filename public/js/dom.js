@@ -19,10 +19,10 @@ backButton.addEventListener("click", () => {
 
 // Burger menu animation
 
-const burgerButton = document.querySelector("#burgerMenuIcon");
-const burgerMenu = document.querySelector("#burgerMenu");
+const burgerButton = document.querySelector("#burger-menu-icon");
+const burgerMenu = document.querySelector("#burger-menu");
 const burgerItemLinks = Array.from(
-  document.getElementsByClassName("burgerItemLink")
+  document.getElementsByClassName("burger-item-link")
 );
 
 burgerButton.addEventListener("click", () => {
