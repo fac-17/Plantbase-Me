@@ -443,15 +443,41 @@ keyframes active {
   text-align: center;
 }
 
+.product-rating{
+  grid-area: rating;
+}
+
+.product-comment{
+  grid-area: comment;
+}
+
+.product-upvotes{
+  grid-area: upvotes;
+}
+
+.upvote-button{
+  grid-area: button;
+  width: 5vw;
+  height: 5vw;
+  font-size: 1.8em;
+  
+}
+
 .product-comment-card {
   margin: 10px;
   padding: 10px;
-  box-shadow: 5px 5px 10px var(--grey);
+  box-shadow: 0.5em 0.5em 1em var(--purple);
   border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 20vw 20vw 20vw 20vw;
+  grid-template-rows: auto;
+  grid-template-areas: ". rating . upvotes"
+  "comment comment comment  ."
+  "comment comment comment button";
+  justify-items: center;
 }
+
+
 
 .product-para {
   font-weight: bold;
