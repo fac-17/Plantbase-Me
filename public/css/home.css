@@ -84,6 +84,29 @@ h2 {
   transition: all 300ms;
 }
 
+.previous-button {
+  background-image: url(../assets/back.png);
+  width: 5em;
+  height: 5em;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  background-color: Transparent;
+  border: none;
+  left: 0vw;
+}
+
+.next-button {
+  background-image: url(../assets/next.png);
+  width: 5em;
+  height: 5em;
+  background-size: contain;
+  position: absolute;
+  right: 0;
+  background-color: Transparent;
+  border: none;
+}
+
 /* @keyframes rotar {
   from {
     transform: rotateY(0deg);
