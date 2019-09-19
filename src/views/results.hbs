@@ -7,7 +7,7 @@
         <article class="result-card">
             <h3 class="result-title"><a href="/product/{{this.id}}" class="result-link">{{this.product_name}}</a></h3>
             <img class="result-image" src="{{this.product_image}}" />
-            <p class="result-description">{{this.product_description}}</p>
+            <p class="result-description">{{limitDescriptionLength this.product_description}}</p>
             <p class="result-rating">{{returnNearestInt this.product_avg_rating}}</p>
         </article>
         {{/each}}
