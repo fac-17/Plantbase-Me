@@ -12,9 +12,6 @@ var slideCount = 4;
 var selectedIndex = 4;
 
 function rotateCarousel() {
-  // if (sliderPressFlag === 0) {
-  //   contentSlider.style.transform = "translateZ(-256px) rotateY(360)";
-  // }
   // weird next line is necessary because for whatever reason we're counting up from 4?
   var angle = (selectedIndex / slideCount) * -360 + 360;
   contentSlider.style.transform =
