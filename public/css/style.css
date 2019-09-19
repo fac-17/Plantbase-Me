@@ -48,8 +48,8 @@ body > section.nav-bar > div.nav-bar-content > svg:nth-child(2) {
 /* ------------ back button ------------ */
 
 .back-button,
-#cravingID,
-#submitProductButton {
+#craving-id,
+#submit-product-button {
   background-color: #80a4b2;
 }
 
@@ -176,7 +176,7 @@ keyframes active {
 
 /* Burger Menu */
 
-#burgerMenu {
+#burger-menu {
   background: var(--lightblue);
   text-align: center;
   position: absolute;
@@ -189,40 +189,63 @@ keyframes active {
   overflow-x: hidden
 }
 
-#burgerMenu.visible {
+#burger-menu.visible {
   width: 200px;
   transform: translateX(0);
 }
 
-#burgerList {
+#burger-list {
   padding: 0;
   margin: 0;
 }
 
-.burgerItem {
+.burger-item {
   list-style: none;
   border: 0.1em solid var(--grey);
   border-right-style: none;
   border-left-style: none;
 }
 
-.burgerItemLink {
+.burger-item-link {
   display: none;
 }
 
-.burgerItemLink.visible {
+.burger-item-link.visible {
   text-decoration: none;
   color: black;
   padding: 2em 4em;
   display: block;
 }
 
+/* ----------- Info Page stylings ---------- */
 
 .about-us {
   text-align: center;
   padding: 10px;
   margin: 30px;
   font-size: 1.5em;
+}
+
+.mission {
+  text-align: center;
+  padding: 10px;
+  margin: 30px;
+  font-size: 1.5em;
+}
+
+.contribute {
+  text-align: center;
+  padding: 10px;
+  margin: 30px;
+  font-size: 1.5em;
+}
+
+/* Add a Product Styles */
+
+#add-a-product-form {
+  padding: 1em;
+  font-size: 1.5em;
+  text-align: center;
 }
 
 

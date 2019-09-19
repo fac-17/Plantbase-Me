@@ -51,25 +51,3 @@
 .product-para {
   font-weight: bold;
 }
-
-/* Add a Product Styles */
-
-#addAProductForm {
-  padding: 1em;
-  font-size: 1.5em;
-  text-align: center;
-}
-
-.mission {
-  text-align: center;
-  padding: 10px;
-  margin: 30px;
-  font-size: 1.5em;
-}
-
-.contribute {
-  text-align: center;
-  padding: 10px;
-  margin: 30px;
-  font-size: 1.5em;
-}
