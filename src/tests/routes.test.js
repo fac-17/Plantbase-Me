@@ -89,3 +89,18 @@ test("Thanks for Submission Page gives correct content type and status 200", t =
       t.end();
     });
 });
+
+test("How to contribute Page gives correct content type and status 200", t => {
+  request(app)
+    .get("/howtocontribute")
+    .end((err, res) => {
+      t.equal(
+        res.headers["content-type"],
+        "text/html; charset=utf-8",
+        "Content type is HTML"
+      );
+      t.equal(res.status, 200, "Status code is 200");
+      t.error(err, "There is no error");
+      t.end();
+    });
+});
