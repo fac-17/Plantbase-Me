@@ -30,7 +30,7 @@ test("Error loads up correctly for 404", t => {
     });
 });
 
-test("Results Page gives correct content type and 200 status", t => {
+test("Results Page gives correct content type for one craving category and 200 status", t => {
   request(app)
     .get("/results/3")
     .end((err, res) => {
@@ -48,6 +48,21 @@ test("Results Page gives correct content type and 200 status", t => {
 test("Product Page gives correct content type for item 1 and status 200", t => {
   request(app)
     .get("/product/1")
+    .end((err, res) => {
+      t.equal(
+        res.headers["content-type"],
+        "text/html; charset=utf-8",
+        "Content type is HTML"
+      );
+      t.equal(res.status, 200, "Status code is 200");
+      t.error(err, "There is no error");
+      t.end();
+    });
+});
+
+test("About us Page gives correct content type and status 200", t => {
+  request(app)
+    .get("aboutus")
     .end((err, res) => {
       t.equal(
         res.headers["content-type"],
