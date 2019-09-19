@@ -63,3 +63,16 @@ test("Check results are correct from getRatingsByProduct query", t => {
     t.end();
   });
 });
+
+// test failes because of failure in the chaining of promises below
+
+// test("Check results are correct from get postCommentUpvote", t => {
+//   const expected = 6;
+
+//   queries.postCommentUpvote(5, 1).then(() => {
+//     queries.getRatingsByProduct(2).then(ratings => {
+//       t.equal(ratings[0].id, expected, "Upvote successfull");
+//       t.end();
+//     });
+//   });
+// });
