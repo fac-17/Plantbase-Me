@@ -106,3 +106,9 @@ h2 {
   background-color: Transparent;
   border: none;
 }
+
+.home-intro {
+  text-align: center;
+  font-style: oblique;
+  padding: 1px;
+}
