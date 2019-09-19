@@ -170,28 +170,28 @@ INSERT INTO products (product_name, product_description, where_to_buy, product_i
     '{"Vegans United"}',
     'https://img.veganlogin.com/thGRHkj9gYYMvdk0.png',
     4,
-    1.25
+    2.25
 ), (
     'Foodie Fuel- Fuel Snacks – Cinnamon Ginger',
     'Start your day with the sweet- spicy taste of cinnamon, the zing of ginger and all of the health benefits of sunflower, pumpkin, flax and chia seeds. Foodie Fuel’s Cinnamon Ginger Snack Crisps are stunningly scrumptious – gingery, flaky, satisfying sweetness.',
     '{"Vegans United"}',
     'https://img.veganlogin.com/z2lh0S36bdhJ83rZ.png',
     4,
-    1.25
+    1.20
 ), (
     'Lulu’s Chocolate- Smoked Sea Salt Almond Raw Bar',
     'As velvety smooth dark chocolate cradles crunchy sprouted almonds, smoked sea salt mingles with coconut sugar sweetness… oh so delectable!',
     '{"Vegans United"}',
     'https://img.veganlogin.com/BHV8wT7Hn7fHWEND.jpg',
     4,
-    1.25
+    4.50
 ), (
     'Taza Organic Dark Chocolate Bar – Toffee, Almond & Sea Salt',
     'Taza Chocolate toffee almond & sea salt 60% dark chocolate bar is USDA-Certified Organic, Kosher, Non-GMO Project Verified, vegan and gluten-free. Each 2.5 oz. bar is made with stone ground chocolate, organic cane sugar and organic vanilla beans in Somerville, Massachusetts.',
     '{"Vegans United"}',
     'https://img.veganlogin.com/grTSMcRQlHLXpS9E.jpg',
     4,
-    1.25
+    3.25
 );
 
 
@@ -209,11 +209,22 @@ INSERT INTO ratings (product_id, rating, comment, votes) VALUES
 (8, 4, 'Oooh First Comment', 1),
 (9, 4, 'Oooh First Comment', 1),
 (10, 4, 'Oooh First Comment', 1),
-(11, 4, 'Oooh First Comment', 1),
+(11, 4, 'Oooh First Comment', 4),
 (12, 4, 'Oooh First Comment', 1),
-(13, 4, 'Oooh First Comment', 1),
-(14, 4, 'Oooh First Comment', 1),
-(15, 4, 'Oooh First Comment', 1);
+(13, 4, 'Oooh First Comment', 3),
+(14, 4, 'Oooh First Comment', 3),
+(15, 5, 'Oooh First Comment', 2),
+(16, 5, 'Amazing!, melts in the mouth like butter',7 ),
+(17, 4, 'Very, very decent', 1),
+(18, 3, 'Mediocre', 1),
+(19, 3, 'Averge...at best', 2),
+(20, 2, 'Poor', 1),
+(21, 3, 'Oooh First Comment', 4),
+(22, 5, 'Suspendous confectionary', 1),
+(22, 4, 'Cor blimey. It is good', 3),
+(20, 3, 'Good Value for money', 3),
+(17, 3, 'Good for the price', 2),
+(19, 1, 'The product needs to be discontinued', 1);
 
 COMMIT;
 
