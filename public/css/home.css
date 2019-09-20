@@ -112,3 +112,14 @@ h2 {
   font-style: oblique;
   padding: 1px;
 }
+
+@media screen and (max-width: 600px) {
+  .select-button {
+    display: inline-block;
+  }
+}
+@media screen and (min-width: 600px) {
+  .select-button {
+    display: none;
+  }
+}
