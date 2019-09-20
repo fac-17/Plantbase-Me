@@ -29,9 +29,10 @@
 
 .upvote-button {
   grid-area: button;
-  width: 5vw;
-  height: 5vw;
+  width: 10vw;
+  height: 10vw;
   font-size: 1.8em;
+  background-color: var(--lightblue);
 }
 
 .product-comment-card {
