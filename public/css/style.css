@@ -109,6 +109,7 @@ body > section.nav-bar > div.nav-bar-content > svg:nth-child(2) {
   padding: 1em;
   font-size: 1.5em;
   text-align: center;
+  margin-bottom: 4em;
 }
 
 /* --------------------- Footer ------------------- */
@@ -124,7 +125,6 @@ body > section.nav-bar > div.nav-bar-content > svg:nth-child(2) {
   justify-content: space-between;
   width: 100vw;
   position: absolute;
-  
 }
 
 .footer {
