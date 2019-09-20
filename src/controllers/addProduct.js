@@ -19,8 +19,9 @@ exports.post = (req, res) => {
     console.log(id[0].id);
     const rating_comment = {
       rating: 0,
-      comment: initial
+      comment: 'initial'
     };
+    console.log(rating_comment);
     postRatingComment(rating_comment, id[0].id);
     res.redirect("/thanksforsubmission");
   });
