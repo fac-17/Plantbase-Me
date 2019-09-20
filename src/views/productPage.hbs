@@ -15,7 +15,7 @@
 
     <p class="product-para">{{chosenProduct.product_description}}</p>
 
-    <section id="rateThisProduct">
+    <section id="rate-this-product">
         <h3>Rate this product</h3>
         <form action="/submitrating/{{chosenProduct.id}}" method="POST">
             <label for="rating">Rating</label>
@@ -32,7 +32,7 @@
             <input type="submit" value="Submit">
         </form>
     </section>
-    <section id="productComments">
+    <section id="product-comments">
         <h3>Comments</h3>
         {{#each ratings}}
         <article class="product-comment-card">
