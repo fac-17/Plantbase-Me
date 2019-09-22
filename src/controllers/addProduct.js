@@ -10,10 +10,23 @@ exports.post = (req, res) => {
   delete product.rating;
   delete product.comment;
 
-  // assign rating and comment to an object for passing to submitRating.js
+  // below I tried to isolate the problem and figured that this query might not do what it needs to do.
+  //The id always comes back as an empty array even with a productname that def. exists in the database
+  // let prodName = "Tofurky Feast";
+  // prodName = "'" + prodName + "'";
+  // console.log("prodname + quotes", prodName);
+  // getProductByName(prodName).then((id) => {
+  //   console.log(id);
+  // }
+  // )
 
   // Post the product & rating
-  postProduct(product).then(id => {
+  postProduct(product).then(() => {
+    let prodName = product.product_name;
+    prodName = "'" + prodName + "'";
+    console.log("prodname + quotes", prodName);
+    getProductByName(prodName);
+  }).then(id => {
     const rating_comment = {
       rating: rating,
       comment: comment
