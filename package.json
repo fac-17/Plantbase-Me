@@ -4,10 +4,10 @@
   "description": "![A Perfect Day For Bananafish, by J. D. Salinger](https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1447411550l/27819869.jpg)",
   "main": "index.js",
   "dependencies": {
-    "body-parser": "^1.19.0",
+    "body-parser": "^1.20.1",
     "custom-env": "^1.0.2",
     "dotenv": "^8.1.0",
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "express-handlebars": "^3.1.0",
     "pg-promise": "^9.1.4",
     "tap-spec": "^5.0.0",
